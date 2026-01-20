@@ -1,0 +1,30 @@
+.rodape{
+
+    background-image: url('../assets/fundos/fundo4.png');
+
+    background-size: cover;         /* ocupar cantos */
+    background-position: center;    /* deixar imagem centralizada*/
+
+    display: flex;                  /* deixar as seçoes lado a lado */
+    justify-content: space-around;  /* deixar centralizaddo em cada seção */
+    align-items: center;
+    padding: 50px 60px;    
+}
+
+.foto{
+    position: center;
+    width: 200px;
+}
+
+.contatos{
+    display: flex;
+}
+.contato{
+    background-color: aqua;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}
+
+
+
