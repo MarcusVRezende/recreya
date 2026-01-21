@@ -24,7 +24,7 @@ const Footer = ()  => {
                     <h1 className=' titulo-footer'> Contatos </h1>
                     
                     <p className='contatos'> <BsTelephone className='icone'/> (61) 9xxxx-xxxx</p>
-                    <p className='contatos'> <MdOutlineEmail className='icone'/> (61) email@gmail.com</p>
+                    <p className='contatos'> <MdOutlineEmail className='icone'/> email@gmail.com</p>
                     <p className='contatos'> <HiOutlineLocationMarker className='icone' /> Brasilia - DF</p>
                 </div>
 
