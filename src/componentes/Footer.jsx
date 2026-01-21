@@ -1,6 +1,10 @@
 import React from 'react';
 import logoFooter from '../assets/footer.png'
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { BsTelephone } from "react-icons/bs";
+import { MdOutlineEmail } from "react-icons/md";
+import { HiOutlineLocationMarker } from "react-icons/hi";
+
 import '../styles/footer.css'
 
 
@@ -8,38 +12,44 @@ const Footer = ()  => {
     return (
 
         <footer className='rodape'>
-
-            <a href="/">
-                <div className='foto-footer'>
-                    <img src ={logoFooter} alt = "logo footer" className='foto' />
-                </div>
-            </a>
-
-            <div className='secao-contatos'>
-                <h1 className=' titulo-footer'> Contatos </h1>
-                <p className='contatos'> (61) 9xxxx-xxxx</p>
-                <p className='contatos'> (61) email@gmail.com</p>
-                <p className='contatos'> Brasilia - DF</p>
-            </div>
-
-            <div className='secao-extras'>
-                <p>Transformando festas infatis em momentos mágicos e inesquecíveis</p>
-                <div className='contatos'>
-                    <div className='Instagram'> 
-                        <a href="https://www.instagram.com/recreya/">
-                        <FaInstagram />
-                        </a>
+            <div className='rodape-conteudo'>
+                <a href="/">
+                    <div className='foto-footer'>
+                        <img src ={logoFooter} alt = "logo footer" className='foto' />
                     </div>
-                    <div className='whatsapp'> 
-                        <a href="https://www.instagram.com/recreya/">
-                        <FaWhatsapp />
-                        </a>
-                    </div>
-                </div>
-                <p>Representanet Legal:</p>
-                <p>Yasmin Daniele Cassiano Vieira</p>
-            </div>
+                </a>
 
+                <div className='secao-contatos'>
+                    
+                    <h1 className=' titulo-footer'> Contatos </h1>
+                    
+                    <p className='contatos'> <BsTelephone className='icone'/> (61) 9xxxx-xxxx</p>
+                    <p className='contatos'> <MdOutlineEmail className='icone'/> (61) email@gmail.com</p>
+                    <p className='contatos'> <HiOutlineLocationMarker className='icone' /> Brasilia - DF</p>
+                </div>
+
+                <div className='secao-extras'>
+                    <p className='contatos-informacoes' >Transformando festas infatis em momentos mágicos e inesquecíveis</p>
+                    <div className='contatos'>
+                        <div className='instagram'> 
+                            <a href="https://www.instagram.com/recreya/">
+                            <FaInstagram className='social' />
+                            </a>
+                        </div>
+                        <div className='whatsapp'> 
+                            <a href="https://www.instagram.com/recreya/">
+                            <FaWhatsapp className='social'/>
+                            </a>
+                        </div>
+                    </div>
+                    <p className='contatos-informacoes'>Representanet Legal:</p>
+                    <p className='contatos-informacoes'>Yasmin Daniele Cassiano Vieira</p>
+                </div>
+            </div>
+            
+            <div className='seguranca'>
+                <p >© 2026 Recreya | Todos os direitos reservados.</p>
+            </div>
         </footer>
     );
 

@@ -1,30 +1,102 @@
 .rodape{
-
+    background-color: rgba(0, 0, 0, 0.3);
     background-image: url('../assets/fundos/fundo4.png');
+    background-blend-mode: multiply;        /* juntar a foto do fundo com a cor mais escura */
+    
+    padding: 50px 60px; 
+}
+.rodape-conteudo{
 
-    background-size: cover;         /* ocupar cantos */
-    background-position: center;    /* deixar imagem centralizada*/
+    background-size: cover;                 /* ocupar cantos */
+    background-position: center;            /* deixar imagem centralizada */
 
-    display: flex;                  /* deixar as seçoes lado a lado */
-    justify-content: space-around;  /* deixar centralizaddo em cada seção */
+    display: flex;                          /* deixar as seçoes lado a lado */
+    justify-content: space-around;          /* deixar centralizaddo em cada seção */
     align-items: center;
-    padding: 50px 60px;    
+      
 }
 
 .foto{
     position: center;
     width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
 }
 
-.contatos{
-    display: flex;
+.titulo-footer{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    padding: 0px 9px;
 }
-.contato{
-    background-color: aqua;
-    border-radius: 50px;
+.secao-contatos{
+    padding: 0px 50px;
+    font-family: inter;
+    padding: 10px;
+    
+}
+.instagram, .whatsapp{
+    width: 50px;
+    height: 50px;
+    
+    padding: 0px;
+    
+    border-radius: 50%;
+    
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);   
+    margin: 2px;
+}
+.instagram{
+    background-color: #b644e7;
+}
+.whatsapp{
+    background-color: #3eec12;
+}
+
+.social{
     width: 30px;
     height: 30px;
+    color: white;
+    
+}
+.contatos{
+    display: flex;
+    font-family: inter;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.822);
+    font-weight: 500;
 }
 
+.icone{
+    padding: 0px 10px;
+    width: 20px;
+    height: 20px;
+}
+.contatos-informacoes{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    
+    font-size: 1.2rem;
+    max-width: 80%;
+}
+
+.seguranca{
+    
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    position: center;
+    font-size: 1.5rem;
+    font-family: inter;
+    border-top: 2px solid #ca6df2a2;
+
+
+}
 
 
