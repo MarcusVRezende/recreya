@@ -18,35 +18,35 @@ const Footer = ()  => {
                         <img src ={logoFooter} alt = "logo footer" className='foto' />
                     </div>
                 </a>
-
-                <div className='secao-contatos'>
-                    
-                    <h1 className=' titulo-footer'> Contatos </h1>
-                    
-                    <p className='contatos'> <BsTelephone className='icone'/> (61) 9xxxx-xxxx</p>
-                    <p className='contatos'> <MdOutlineEmail className='icone'/> email@gmail.com</p>
-                    <p className='contatos'> <HiOutlineLocationMarker className='icone' /> Brasilia - DF</p>
-                </div>
-
-                <div className='secao-extras'>
-                    <p className='contatos-informacoes' >Transformando festas infatis em momentos mágicos e inesquecíveis</p>
-                    <div className='contatos'>
-                        <div className='instagram'> 
-                            <a href="https://www.instagram.com/recreya/">
-                            <FaInstagram className='social' />
-                            </a>
-                        </div>
-                        <div className='whatsapp'> 
-                            <a href="https://www.instagram.com/recreya/">
-                            <FaWhatsapp className='social'/>
-                            </a>
-                        </div>
+                <div className='bloco2'>
+                    <div className='secao-contatos'>
+                        
+                        <h1 className=' titulo-footer'> Contatos </h1>
+                        
+                        <p className='contatos'> <BsTelephone className='icone'/> (61) 9xxxx-xxxx</p>
+                        <p className='contatos'> <MdOutlineEmail className='icone'/> email@gmail.com</p>
+                        <p className='contatos'> <HiOutlineLocationMarker className='icone' /> Brasilia - DF</p>
                     </div>
-                    <p className='contatos-informacoes'>Representanet Legal:</p>
-                    <p className='contatos-informacoes'>Yasmin Daniele Cassiano Vieira</p>
+
+                    <div className='secao-extras'>
+                        <p className='contatos-informacoes' >Transformando festas infatis em momentos mágicos e inesquecíveis</p>
+                        <div className='contatos'>
+                            <div className='instagram'> 
+                                <a href="https://www.instagram.com/recreya/">
+                                <FaInstagram className='social' />
+                                </a>
+                            </div>
+                            <div className='whatsapp'> 
+                                <a href="https://www.instagram.com/recreya/">
+                                <FaWhatsapp className='social'/>
+                                </a>
+                            </div>
+                        </div>
+                        <p className='contatos-informacoes'>Representanet Legal:</p>
+                        <p className='contatos-informacoes'>Yasmin Daniele Cassiano Vieira</p>
+                    </div>
                 </div>
             </div>
-            
             <div className='seguranca'>
                 <p >© 2026 Recreya | Todos os direitos reservados.</p>
             </div>
