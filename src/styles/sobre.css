@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.sessao-sobre {
+    background-color: rgba(0, 0, 0, 0.15);
+    background-image: url('../assets/fundos/fundo2.png');
+    background-blend-mode: multiply;
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 20px 20px;
+
+    width: 100%;
+    height: 100%;
+}
+.titulo-sessao {
+    margin-left: 2.5%;
+    padding: 20px;
+    color: #FF9141;
+    font-weight: 800;
+    font-size: 3.5rem;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);    
+    text-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);   
+
+}
+.sobre{
+    display: flex;
+}
+.foto-sobre-container{
+    padding: 10px;
+    place-items: center;
+    filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.35));
+}
+.foto-sobre{    
+    border-radius: 50px;
+    width: 650px;
+    height: 325px;
+}
+.primeira-parte{
+    padding: 10px;
+    width: 100%;
+}
+.segunda-parte{
+    padding: 10px;
+    width: 100%;
+    
+}
+/*------------ Bloco Branco --------------*/
+.texto-foto-container{
+    padding: 10px;
+}
+.texto-foto{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: justify;
+    color: white;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);   
+
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+}
+.figura-titulo-bloco{
+    display: flex;
+    gap: 10px;
+}
+.logo-bloco-sobre{
+    background-color: #FF9141;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 80px;
+}
+.icone-sobre{
+    width: 45px;
+    height: 45px;
+    color: white;
+}
+.bloco-sobre-um{
+    background-color: white;
+    padding: 25px;
+    border-radius: 25px;
+    border: 2px solid #FF9141;
+    width: 85%;
+    margin-left: 5%;
+    filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.35));
+}
+.titulo-bloco-container{
+    padding: 0px;
+}
+.titulo-bloco{
+    font-family: "Inter", sans-serif;
+    padding: 15px 5px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #FF9141;
+
+}
+.texto-bloco-container{
+    padding: 10px;
+    width: 100%;
+}
+.texto-bloco{
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/*------------ Bloco Laranja --------------*/
+
+.bloco-sobre-dois{
+    background-color: #FF9141;
+    padding: 25px;
+    border-radius: 25px;
+    border: 2px solid white;
+    width: 85%;
+    margin-left: 5%;
+    filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.35));
+}
+.titulo-bloco-dois{
+    font-family: "Inter", sans-serif;
+    padding: 15px 5px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fdfdfd;
+}
+.logo-bloco-sobre-dois{
+    background-color: #ffffff;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 80px;
+}
+.icone-sobre-dois{
+    width: 45px;
+    height: 45px;
+    color: #FF9141;
+}
+.texto-bloco-dois{
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: justify;
+    color: white;
+}
