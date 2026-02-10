@@ -42,8 +42,7 @@ const Footer = ()  => {
                                 </a>
                             </div>
                         </div>
-                        <p className='contatos-informacoes'>Representanet Legal:</p>
-                        <p className='contatos-informacoes'>Yasmin Daniele Cassiano Vieira</p>
+                        <p className='contatos-informacoes'>Representanet Legal: Yasmin Daniele Cassiano Vieira</p>
                     </div>
                 </div>
             </div>

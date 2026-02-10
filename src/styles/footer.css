@@ -1,21 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lemon&display=swap');
 
-.rodape{
+.rodape {
     background-color: rgba(0, 0, 0, 0.3);
     background-image: url('../assets/fundos/fundo5.png');
-    background-blend-mode: multiply;        /* juntar a foto do fundo com a cor mais escura */
-    background-size: cover;                 /* ocupar cantos. Importante para o fundo não se repetir*/
-    background-position: center;            /* deixar imagem centralizada */
+    background-blend-mode: multiply;
+    /* juntar a foto do fundo com a cor mais escura */
+    background-size: cover;
+    /* ocupar cantos. Importante para o fundo não se repetir*/
+    background-position: center;
+    /* deixar imagem centralizada */
 
-    padding: 20px 20px; 
+    padding: 20px 20px;
 }
 
-.rodape-conteudo, .bloco2{
-    display: flex;                          /* deixar as seçoes lado a lado */
-    justify-content: space-around;          /* deixar centralizaddo em cada seção */
-    align-items: center;   
+.rodape-conteudo,
+.bloco2 {
+    display: flex;
+    /* deixar as seçoes lado a lado */
+    justify-content: space-around;
+    /* deixar centralizaddo em cada seção */
+    align-items: center;
 }
-.foto{
+
+.foto {
     margin-left: 10%;
     align-items: center;
     padding: 0px;
@@ -24,50 +31,57 @@
     border-radius: 50%;
 }
 
-.titulo-footer{
+.titulo-footer {
     font-family: "Lemon", serif;
     font-size: 2rem;
     color: rgb(255, 255, 255);
     font-weight: 200;
     padding: 0px 9px;
 }
-.secao-contatos{
+
+.secao-contatos {
     padding: 10px 0px;
     font-family: inter;
-    
+
 }
-.secao-extras{
+
+.secao-extras {
     margin-left: 20%;
-    padding: 10px 10px;  
+    padding: 10px 10px;
 }
-.instagram, .whatsapp{
+
+.instagram,
+.whatsapp {
     width: 50px;
     height: 50px;
-        
+
     border-radius: 50%;
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);   
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     margin: 2px;
 }
-.instagram{
+
+.instagram {
     background-color: #b644e7;
 }
-.whatsapp{
+
+.whatsapp {
     background-color: #3eec12;
 }
 
-.social{
+.social {
     width: 30px;
     height: 30px;
     color: white;
     display: block;
-    
+
 }
-.contatos{
+
+.contatos {
     display: flex;
     font-family: "Inter", sans-serif;
     font-size: 1.4rem;
@@ -75,16 +89,19 @@
     font-weight: 600;
     padding: 0px;
 }
-.contatos-icones{
+
+.contatos-icones {
     display: flex;
     margin-bottom: 3%;
 }
-.icone{
+
+.icone {
     padding: 5px 10px;
     width: 45px;
     height: 35px;
 }
-.contatos-informacoes{
+
+.contatos-informacoes {
     font-family: "Inter", sans-serif;
     color: rgb(255, 255, 255);
     font-weight: 500;
@@ -92,7 +109,7 @@
     padding: 0px 0px;
 }
 
-.seguranca{
+.seguranca {
     font-family: "Inter", sans-serif;
     font-weight: 500;
     text-align: center;
@@ -101,127 +118,176 @@
     font-size: 1.3rem;
     border-top: 2px solid #ca6df2a2;
 }
-.seguranca-frase{
+
+.seguranca-frase {
     margin-top: 2.5%;
 }
 
-@media(max-width: 1024px){
+@media(max-width: 1024px) {
 
-    .rodape{     
-        padding: 10px 10px; 
+    .rodape {
+        padding: 10px 10px;
     }
-    .secao-contatos{
+
+    .secao-contatos {
         margin-left: 25%;
         padding: 0px 0px;
     }
-    .foto{
+
+    .foto {
         margin-left: 55%;
         width: 160px;
-        height: 160px;
+        height: 170px;
     }
-    .titulo-footer{
+
+    .titulo-footer {
         font-size: 1.5rem;
         padding: 0px 10px;
     }
-    .contatos{
+
+    .contatos {
         font-size: 1.1rem;
         font-weight: 300;
     }
-    .icone{
+
+    .icone {
         padding: 0px 10px;
         width: 40px;
         height: 30px;
     }
-    .secao-extras{
+
+    .secao-extras {
         margin-left: 5%;
         width: 100%;
     }
-    .instagram, .whatsapp{
+
+    .instagram,
+    .whatsapp {
         width: 40px;
-        height: 40px;                    
+        height: 40px;
     }
-    .social{
+
+    .social {
         width: 30px;
         height: 30px;
     }
-    .contatos-informacoes{
+
+    .contatos-informacoes {
         font-size: 1.1rem;
     }
-    .seguranca{
+
+    .seguranca {
         font-size: 1.2rem;
         border-top: 2px solid #ca6df2a2;
     }
 }
-@media(max-width: 690px){
-   
-    .bloco2{
+
+@media(max-width: 768px) {
+    .foto {
+        margin-left: 45%;
+        width: 170px;
+        height: 150px;
+    }
+}
+
+@media(max-width: 690px) {
+
+    .bloco2 {
         margin-right: 0%;
         margin-right: 0%;
     }
+
     .rodape-conteudo {
-        flex-direction: column; 
+        flex-direction: column;
     }
-    .foto{
+
+    .foto {
         width: 150px;
         height: 150px;
         margin-left: 0%;
     }
-    .secao-contatos{
+
+    .secao-contatos {
         margin-right: 0%;
         width: 100%;
     }
-     .secao-extras{
+
+    .secao-extras {
         margin-left: 0%;
     }
-    .contatos{
+
+    .contatos {
         margin-right: 10%;
         font-family: 5rem;
     }
-    .secao-contatos{
+
+    .secao-contatos {
         margin-left: 0%;
-        margin-bottom: 22%;
+        margin-bottom: 2%;
     }
 }
-@media(max-width: 344px){
 
-    .foto-footer{
-        padding: 20px;
-    }
-    .secao-contatos{
-        margin-bottom: 17%;
-    }
-    .secao-extras{
-        padding: 0px 0px;
-    }
-    .contatos, .contatos-informacoes{
-        font-size: 0.7rem;
-    }
-     .titulo-footer{
+@media(max-width: 425px) {
+    .titulo-footer {
         font-size: 1rem;
     }
-    .instagram, .whatsapp{
-        width: 30px;
-        height: 30px;                    
+
+    .contatos-informacoes {
+        font-size: 0.8rem;
     }
-    .social{
+}
+
+@media(max-width: 375px) {
+
+    .foto-footer {
+        padding: 20px;
+    }
+
+    .secao-contatos {
+        margin-bottom: 7%;
+    }
+
+    .secao-extras {
+        padding: 0px 0px;
+    }
+
+    .contatos,
+    .contatos-informacoes {
+        font-size: 0.7rem;
+    }
+
+    .titulo-footer {
+        font-size: 1rem;
+    }
+
+    .instagram,
+    .whatsapp {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social {
         width: 20px;
         height: 20px;
     }
-    .icone{
+
+    .icone {
         padding: 0px 10px;
         width: 35px;
         height: 15px;
     }
-    .seguranca{
+
+    .seguranca {
 
         font-size: 0.7rem;
         border-top: 2px solid #ca6df2a2;
     }
-    .seguranca-frase{
+
+    .seguranca-frase {
         margin-top: 7%;
     }
-    .contatos-icones{
+
+    .contatos-icones {
         margin-top: -7%;
     }
 }
-

@@ -1,5 +1,5 @@
 import "../styles/sobre.css";
-import fotoSobre from "../assets/fundos/fundo1.png";
+import fotoSobre from "../assets/imagem-temporaria-hihi.jpg";
 import { FaRegHeart } from "react-icons/fa";
 import React, { useEffect } from "react";
 
