@@ -30,7 +30,7 @@ const Footer = ()  => {
 
                     <div className='secao-extras'>
                         <p className='contatos-informacoes' >Transformando festas infatis em momentos mágicos e inesquecíveis</p>
-                        <div className='contatos'>
+                        <div className='contatos-icones'>
                             <div className='instagram'> 
                                 <a href="https://www.instagram.com/recreya/">
                                 <FaInstagram className='social' />
@@ -42,13 +42,12 @@ const Footer = ()  => {
                                 </a>
                             </div>
                         </div>
-                        <p className='contatos-informacoes'>Representanet Legal:</p>
-                        <p className='contatos-informacoes'>Yasmin Daniele Cassiano Vieira</p>
+                        <p className='contatos-informacoes'>Representanet Legal: Yasmin Daniele Cassiano Vieira</p>
                     </div>
                 </div>
             </div>
             <div className='seguranca'>
-                <p >© 2026 Recreya | Todos os direitos reservados.</p>
+                <p className='seguranca-frase' >© 2026 Recreya | Todos os direitos reservados.</p>
             </div>
         </footer>
     );

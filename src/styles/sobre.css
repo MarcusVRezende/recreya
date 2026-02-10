@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.sessao-sobre {
+    background-color: rgba(0, 0, 0, 0.15);
+    background-image: url('../assets/fundos/fundo2.png');
+    background-blend-mode: multiply;
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 20px 20px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.titulo-sessao {
+    margin-left: 2.5%;
+    padding: 20px;
+    color: #FF9141;
+    font-weight: 800;
+    font-size: 3.5rem;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    text-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
+
+}
+
+.sobre {
+    display: flex;
+}
+
+.foto-sobre-container {
+    padding: 10px;
+    place-items: center;
+    filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.35));
+}
+
+.foto-sobre {
+    border-radius: 50px;
+    width: 95%;
+    height: 100%;
+}
+
+.primeira-parte {
+    padding: 10px;
+    width: 100%;
+}
+
+.segunda-parte {
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    max-width: 100%;
+    max-width: 1200px;
+    margin: 0px auto 0 auto;
+
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*------------ Bloco Branco --------------*/
+.texto-foto-container {
+    padding: 10px;
+}
+
+.texto-foto {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: justify;
+    color: white;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+}
+
+.figura-titulo-bloco {
+    display: flex;
+    gap: 10px;
+
+}
+
+.logo-bloco-sobre {
+    background-color: #FF9141;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 70px;
+}
+
+.icone-sobre {
+    width: 40px;
+    height: 40px;
+    color: white;
+}
+
+.bloco-sobre-um {
+    background-color: white;
+    padding: 15px;
+    border-radius: 25px;
+    border: 2px solid #FF9141;
+    width: 100%;
+    filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.35));
+    margin-top: 2%;
+}
+
+.titulo-bloco-container {
+    padding: 0px;
+}
+
+.titulo-bloco {
+    font-family: "Inter", sans-serif;
+    padding: 15px 5px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #FF9141;
+
+}
+
+.texto-bloco-container {
+    padding: 10px;
+    width: 100%;
+}
+
+.texto-bloco {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/*------------ Bloco Laranja --------------*/
+
+.bloco-sobre-dois {
+    background-color: #FF9141;
+    padding: 15px;
+    border-radius: 25px;
+    border: 2px solid white;
+    width: 100%;
+    filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.35));
+    margin-top: 2%;
+
+}
+
+.titulo-bloco-dois {
+    font-family: "Inter", sans-serif;
+    padding: 15px 5px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fdfdfd;
+}
+
+.logo-bloco-sobre-dois {
+    background-color: #ffffff;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 70px;
+}
+
+.icone-sobre-dois {
+    width: 40px;
+    height: 40px;
+    color: #FF9141;
+}
+
+.texto-bloco-dois {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: justify;
+    color: white;
+}
+
+/*---------------------------------*/
+.init-hidden {
+    opacity: 0;
+    transition: opacity 1s linear;
+    transform: translateY(50px);
+    transition: all 0.8s ease-in-out;
+
+    flex: 1 1 45%;
+    min-width: 320px;
+
+}
+
+.init-hidden-off {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*---------------------------------*/
+
+@media(max-width: 1024px) {
+    .titulo-sessao {
+        margin-left: 0%;
+        font-size: 3.5rem;
+    }
+
+    .foto-sobre {
+        width: 100%;
+        height: 225px;
+    }
+
+    .texto-foto {
+        font-size: 1.2rem;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .titulo-bloco,
+    .titulo-bloco-dois {
+        padding: 14px 5px;
+        font-size: 1.8rem;
+    }
+
+    .segunda-parte {
+        width: 120%;
+        gap: 10px;
+    }
+
+    .texto-bloco-container {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .texto-bloco,
+    .texto-bloco-dois {
+        font-size: 1rem;
+    }
+
+    .logo-bloco-sobre,
+    .logo-bloco-sobre-dois {
+        width: 55px;
+        height: 65px;
+    }
+}
+
+@media(max-width: 828px) {
+
+    .foto-sobre {
+        border-radius: 20px;
+        width: 100%;
+        height: 175px;
+    }
+
+    .texto-foto {
+        font-size: 1rem;
+    }
+
+    .titulo-bloco,
+    .titulo-bloco-dois {
+        padding: 10px 5px;
+        font-size: 1.5rem;
+    }
+
+    .segunda-parte {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .texto-bloco-container {
+        padding: 0px;
+    }
+
+    .texto-bloco,
+    .texto-bloco-dois {
+        font-size: 0.8rem;
+    }
+
+    .icone-sobre,
+    .icone-sobre-dois {
+        width: 25px;
+        height: 25px;
+    }
+
+    .logo-bloco-sobre,
+    .logo-bloco-sobre-dois {
+        border-radius: 10px;
+        width: 40px;
+        height: 50px;
+    }
+
+    .titulo-sessao {
+        margin-left: 0%;
+        font-size: 3rem;
+    }
+}
+
+@media(max-width: 700px) {
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto-sobre {
+        border-radius: 20px;
+        width: 95%;
+        height: 100%;
+    }
+
+    .titulo-sessao {
+        text-align: center;
+    }
+
+    .texto-foto {
+        font-size: 1.07rem;
+        width: 94%;
+        margin-left: 3%;
+    }
+
+    .primeira-parte,
+    .segunda-parte {
+        width: 100%;
+    }
+
+    .segunda-parte {
+        width: 100%;
+        padding: 0px 0px;
+        max-width: 90%;
+    }
+
+    .init-hidden {
+        flex: 1 1 25%;
+        min-width: 196px;
+    }
+}
+
+@media(max-width: 425px) {
+    .foto-sobre {
+        border-radius: 10px;
+        width: 100%;
+        height: 200px;
+    }
+
+    .texto-foto {
+        font-size: 1rem;
+    }
+
+    .titulo-sessao {
+        font-size: 3rem;
+    }
+
+    .init-hidden {
+        min-width: 100%;
+    }
+}
+
+@media(max-width: 320px) {
+    .titulo-sessao {
+        font-size: 2.5rem;
+    }
+
+    .foto-sobre {
+        border-radius: 10px;
+        width: 100%;
+        height: 135px;
+    }
+
+    .texto-foto {
+        font-size: 0.85rem;
+        margin-left: 0%;
+        width: 100%;
+    }
+
+    .segunda-parte {
+        padding: 0px 0px;
+        max-width: 100%;
+    }
+
+    .bloco-sobre-um,
+    .bloco-sobre-dois {
+        border-radius: 20px;
+    }
+
+    .titulo-bloco,
+    .titulo-bloco-dois {
+        padding: 10px 5px;
+        font-size: 1.3rem;
+    }
+
+    .texto-bloco,
+    .texto-bloco-dois {
+        font-size: 0.79rem;
+    }
+}
