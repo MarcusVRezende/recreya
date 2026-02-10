@@ -43,8 +43,15 @@
 }
 .segunda-parte{
     padding: 10px;
-    width: 100%;
-    
+    width: 100%;    
+    justify-content: center;
+    max-width: 100%;
+    max-width: 1200px;
+    margin: 0px auto 0 auto;
+
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 /*------------ Bloco Branco --------------*/
 .texto-foto-container{
@@ -82,12 +89,12 @@
 }
 .bloco-sobre-um{
     background-color: white;
-    padding: 25px;
+    padding: 20px;
     border-radius: 25px;
     border: 2px solid #FF9141;
-    width: 85%;
-    margin-left: 5%;
+    width: 100%;
     filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.35));
+    margin-top: 2%;
 }
 .titulo-bloco-container{
     padding: 0px;
@@ -116,12 +123,13 @@
 
 .bloco-sobre-dois{
     background-color: #FF9141;
-    padding: 25px;
+    padding: 20px;
     border-radius: 25px;
     border: 2px solid white;
-    width: 85%;
-    margin-left: 5%;
+    width: 100%;
     filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.35));
+    margin-top: 2%;
+
 }
 .titulo-bloco-dois{
     font-family: "Inter", sans-serif;
@@ -152,3 +160,20 @@
     text-align: justify;
     color: white;
 }
+
+/*---------------------------------*/
+.init-hidden{
+    opacity: 0;
+    transition: opacity 1s linear;
+    transform: translateY(50px);
+    transition: all 0.8s ease-in-out;
+
+    flex: 1 1 45%;     /* Tenta ocupar 45% da largura cada um */
+    min-width: 320px;
+
+}
+.init-hidden-off{
+    opacity: 1;
+    transform: translateY(0);
+}
+/*---------------------------------*/
