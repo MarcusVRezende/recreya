@@ -77,9 +77,8 @@
 }
 
 .botao-inicio:hover {
-    background: linear-gradient(#FFE04C, #2FB5FF);
-    border: 2px solid #2FB5FF;
-
+    background: linear-gradient(#CA6DF2, #2FB5FF);
+    border: 2px solid #CA6DF2;
 
 }
 
@@ -114,7 +113,7 @@
     height: 350px;
 
     z-index: 1;
-    transform: translate(-250px, -80px);
+    transform: translate(-200px, -80px);
 }
 
 .carrocel-container {
@@ -123,7 +122,7 @@
     background-color: #FFE04C;
 
     z-index: 2;
-    transform: translate(70px, -10px);
+    transform: translate(100px, -25px);
 }
 
 .imagem-fixa,
