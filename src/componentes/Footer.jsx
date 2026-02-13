@@ -11,7 +11,7 @@ import '../styles/footer.css'
 const Footer = ()  => {
     return (
 
-        <footer className='rodape'>
+        <footer className='rodape' id='contato'>
             <div className='rodape-conteudo'>
                 <a href="/">
                     <div className='foto-footer'>
