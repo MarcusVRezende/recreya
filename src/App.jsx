@@ -3,6 +3,7 @@ import MyNavbar from "./components/Navbar/Navbar";
 import Footer from "./componentes/Footer";
 import React from "react";
 import Sobre from "./componentes/Sobre";
+import Inicio from "./componentes/Inicio";
 
 function App(){
 
@@ -12,7 +13,7 @@ function App(){
       <div className="app-container">
         <MyNavbar />
         <main>
-          <h1>Sua Festa Mágica Começa aqui!</h1>
+          <Inicio />
           <Sobre />
         </main>
       </div>
