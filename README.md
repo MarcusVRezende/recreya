@@ -23,10 +23,17 @@ Siga estes passos para rodar o projeto na sua máquina:
 1. **Clone o repositório:**
    ```bash
    git clone https://github.com/MarcusVRezende/recreya.git
-2. **Instale as dependências: **
+2. **Instale as dependências:**
    ```bash
    npm install
-3. Inicie o servidor de desenvolvimento:
+3. **Inicie o servidor de desenvolvimento:**
     ```bash
    npm run dev
   O site estará disponível em http://localhost:5173.
+
+---
+## 📦 Deploy
+
+Este projeto utiliza o GitHub Pages para hospedagem. Para atualizar a versão em produção, utilize:
+```bash
+npm run deploy
