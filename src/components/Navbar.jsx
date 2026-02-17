@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
-import logo from '../../assets/logoNavbar.png';
-import icone3 from '../../assets/icone3.png';
-import './Navbar.css'; // Importando o estilo
+import logo from '../assets/logoNavbar.png';
+import icone3 from '../assets/icone3.png';
+import '../styles/Navbar.css'; // Importando o estilo
 
 const MyNavbar = () => {
     return (
