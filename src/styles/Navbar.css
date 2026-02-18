@@ -1,9 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
 
+/* --- CONFIGURAÇÃO GLOBAL DO SCROLL --- */
+html {
+    scroll-behavior: smooth; /* Rolagem suave */
+    /* Isso garante que quando clicar no link, ele pare 110px ANTES do topo (100px da barra + 10px de respiro) */
+    scroll-padding-top: 110px; 
+}
+
+body {
+    /* Empurra o site para baixo para não ficar atrás da barra fixa */
+    padding-top: 100px; 
+}
+
+/* --- AJUSTE PARA MOBILE (OPCIONAL MAS RECOMENDADO) --- */
+/* Se no celular a barra for menor, ajuste aqui para não sobrar espaço branco */
+@media (max-width: 991px) {
+    body {
+        padding-top: 90px; /* Ajuste conforme a altura real no mobile */
+    }
+    html {
+        scroll-padding-top: 100px;
+    }
+}
+
+/* --- SUA NAVBAR --- */
 .navbar-recreya {
     font-family: 'Fredoka', sans-serif;
-    background-color: #ffffff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
+    background-color: #ffffff; /* Fundo branco para não ver o conteúdo passando atrás */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* Aumentei um pouco a sombra para destacar mais */
 }
 
 .nav-link-custom {
@@ -19,11 +43,12 @@
     color: #5BC0F8 !important; 
 }
 
-
+/* Estado ativo */
 .nav-link-custom.active {
     color: #5BC0F8 !important; 
 }
 
+/* O risquinho embaixo do link ativo */
 .nav-link-custom.active::after {
     content: '';
     display: block;
@@ -35,7 +60,7 @@
     border-radius: 2px;
 }
 
-
+/* --- BOTÃO FALE CONOSCO --- */
 .btn-fale-conosco {
     background-color: #8df377; 
     color: #000000;
@@ -47,10 +72,11 @@
     gap: 8px; 
     text-decoration: none;
     transition: transform 0.2s, background-color 0.2s;
-    box-shadow: 0 4px 0 #75cf63; 
+    box-shadow: 0 4px 0 #75cf63; /* Efeito 3D legal */
 }
 
 .btn-fale-conosco:hover {
     background-color: #7ce066;
-    transform: translateY(1px); 
+    transform: translateY(2px); /* Efeito de apertar o botão */
+    box-shadow: 0 2px 0 #75cf63; /* Sombra diminui quando aperta */
 }
