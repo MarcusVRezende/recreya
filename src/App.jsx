@@ -5,6 +5,8 @@ import React from "react";
 import Sobre from "./componentes/Sobre";
 import Inicio from "./componentes/Inicio";
 import Services from "./components/Services";
+import Comentarios from "./components/comentarios";
+import Letreiro from "./components/Letreiro";
 
 function App(){
 
@@ -12,14 +14,23 @@ function App(){
   return (
     <>
       <div className="app-container">
+        <div>
         <MyNavbar />
+
+        </div>
         <main>
           <Inicio />
           <Sobre />
         </main>
       </div>
+    
       <div>
       <Services/>
+      </div>
+      <div>
+        <Comentarios />
+      </div>
+      <div>
       </div>
       <div>
         <Footer />

@@ -119,7 +119,7 @@ const Services = () => {
                     })}
                 </div>
 
-                <div className="bg-white rounded-[40px] !p-6 md:p-10 shadow-2xl relative z-10 flex flex-col lg:flex-row gap-12 items-center border-8 border-gray-50" style={{ marginBottom: "100px" }}>
+                <div className="bg-white rounded-[40px] !p-6 md:p-10 shadow-2xl relative z-10 flex flex-col lg:flex-row gap-12 items-center border-8 border-gray-50" style={{ marginBottom: "100px", marginTop: "50px" }}>
 
                     <div className="flex-1 w-full text-center lg:text-left">
                         <h3 className="font-luckiest !text-5xl md:!text-6xl text-white text-stroke-orange drop-shadow-sm mb-8 uppercase">

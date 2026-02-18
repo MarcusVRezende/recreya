@@ -6,7 +6,7 @@ import '../styles/Navbar.css'; // Importando o estilo
 
 const MyNavbar = () => {
     return (
-        <Navbar expand="lg" className="navbar-recreya py-3">
+        <Navbar expand="lg" className="navbar-recreya py-3" fixed='top'>
             <Container>
                 
                 <Navbar.Brand href="#home" className="d-flex align-items-center gap-2">

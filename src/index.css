@@ -3,14 +3,25 @@
 body {
   background-image: url('./assets/fundo (1).png');
 
-  background-size: cover;
-  background-position: center;
+  /* MUDANÇA 1: Ajuste o tamanho. 
+     'cover' dá zoom e corta. 
+     '100% auto' garante que a largura caiba inteira e a altura flua naturalmente. */
+  background-size: 100% auto; 
+
+  /* MUDANÇA 2: A Posição Mágica.
+     'center' alinha no meio (cortando o topo).
+     'center 100px' diz: Centraliza horizontalmente, mas começa 100px de cima para baixo. */
+  background-position: center 100px; 
+  
   background-repeat: no-repeat;
 
-  background-color: rgba(0, 0, 0, 0.3); 
-  background-blend-mode: overlay;
-
+  background-color: #fcfcfc; /* Uma cor de fundo caso a imagem demore a carregar */
+  /* Removi o blend-mode overlay pois com fundo branco ele pode estourar as cores */
+  
   margin: 0;
-  padding: 0;
+  
+  /* Mantém o padding para empurrar o CONTEÚDO (texto/slider), não a imagem */
+  padding-top: 100px; 
+  
   min-height: 100vh;
 }
