@@ -7,6 +7,8 @@ import Inicio from "./componentes/Inicio";
 import Services from "./components/Services";
 import Comentarios from "./components/comentarios";
 import Letreiro from "./components/Letreiro";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App(){
 
