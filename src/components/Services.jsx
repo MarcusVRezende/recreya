@@ -38,7 +38,7 @@ const Services = () => {
     const activeContent = servicesData.find(s => s.id === activeTab);
 
     return (
-        <section className="py-10 relative w-full overflow-hidden">
+        <section className="py-10 relative w-full overflow-hidden" id='servicos'>
             <style>
                 {`
           @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');

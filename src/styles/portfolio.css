@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.portfolio-container {
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: clip;
+    width: 100%;
+}
+
+.texto-portfolio-container {
+    border-radius: 5px;
+    width: 100%;
+    padding: 0px 95px;
+    padding-top: 200px;
+    padding-bottom: 190px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.texto-portfolio-container:hover {
+    transform: scale(1.01);
+    transition: all 0.3s ease;
+}
+
+
+.titulo-portfolio,
+.texto-portfolio {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+}
+
+.titulo-portfolio {
+    margin-left: 15%;
+    width: 70%;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.texto-portfolio {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.imagens-portfolio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    position: relative;
+    width: 120%;
+}
+
+.imagem-portfolio-um,
+.imagem-portfolio-dois,
+.imagem-portfolio-tres,
+.imagem-portfolio-quatro {
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    gap: 0%;
+    height: 330px;
+    z-index: 0;
+    border: 1px solid black;
+    position: absolute;
+}
+
+.imagem-portfolio-um:hover,
+.imagem-portfolio-dois:hover,
+.imagem-portfolio-tres:hover,
+.imagem-portfolio-quatro:hover {
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+
+.imagem-portfolio-um {
+    top: -120px;
+    left: 0%;
+    rotate: 20deg;
+}
+
+.imagem-portfolio-dois {
+    top: -110px;
+    left: 30%;
+    rotate: -10deg;
+}
+
+.imagem-portfolio-tres {
+    top: -120px;
+    left: 60%;
+    rotate: 20deg;
+}
+
+.imagem-portfolio-quatro {
+    top: -560px;
+    left: 65%;
+    rotate: -20deg;
+}
+
+.foto-portfolio {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.icone-foto-um,
+.icone-foto-dois,
+.icone-foto-tres,
+.icone-foto-quatro {
+
+    width: 90px;
+    height: 90px;
+    z-index: 1;
+    position: absolute;
+    transform: translateX(-50%);
+
+}
+
+.icone-foto-um:hover,
+.icone-foto-dois:hover,
+.icone-foto-tres:hover,
+.icone-foto-quatro:hover {
+    filter: drop-shadow(1px 0px 0px black) drop-shadow(-1px 0px 0px black) drop-shadow(0px 1px 0px black) drop-shadow(0px -1px 0px black);
+
+}
+
+.icone-foto-um {
+    color: #FFE04C;
+    transform: translate(-20%, -60%)rotate(-80deg);
+}
+
+.icone-foto-dois {
+    color: #2FB5FF;
+    transform: translate(180%, -60%)rotate(-20deg);
+}
+
+.icone-foto-tres {
+    color: #FF9141;
+    transform: translate(70%, -80%)rotate(-70deg);
+}
+
+.icone-foto-quatro {
+    color: #CA6DF2;
+    transform: translate(50%, -60%)rotate(-60deg);
+}
+
+@media(max-width: 1215px) {
+    .portfolio-container {
+        padding-top: 90px;
+
+    }
+
+    .texto-portfolio-container {
+        padding: 0px 0px;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    .titulo-portfolio {
+        margin-left: 22%;
+        width: 60%;
+        font-size: 1.6rem;
+    }
+
+    .texto-portfolio {
+        font-size: 1.2rem;
+        margin-left: 5%;
+    }
+
+    .foto-portfolio {
+        width: 175px;
+        height: 175px;
+    }
+
+    .imagens-portfolio-container {
+        height: 150px;
+        width: 120%;
+    }
+
+    .imagem-portfolio-um,
+    .imagem-portfolio-dois,
+    .imagem-portfolio-tres,
+    .imagem-portfolio-quatro {
+        height: 225px;
+    }
+
+    .imagem-portfolio-quatro {
+        top: -425px;
+        left: 68%;
+        rotate: -25deg;
+    }
+
+    .icone-foto-um,
+    .icone-foto-dois,
+    .icone-foto-tres,
+    .icone-foto-quatro {
+        width: 60px;
+        height: 60px;
+    }
+}

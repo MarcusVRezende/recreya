@@ -7,39 +7,28 @@ import Inicio from "./componentes/Inicio";
 import Services from "./components/Services";
 import Comentarios from "./components/comentarios";
 import Letreiro from "./components/Letreiro";
+import Portfolio from "./componentes/Portfolio";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function App(){
-
-
+function App() {
   return (
     <>
       <div className="app-container">
         <div>
-        <MyNavbar />
-
+          <MyNavbar />
         </div>
         <main>
           <Inicio />
+          <Portfolio />
           <Sobre />
+          <Services />
+          <Comentarios />
         </main>
-      </div>
-    
-      <div>
-      <Services/>
-      </div>
-      <div>
-        <Comentarios />
-      </div>
-      <div>
-      </div>
-      <div>
         <Footer />
       </div>
     </>
   );
-};
+}
 
 export default App;
-
