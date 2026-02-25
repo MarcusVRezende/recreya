@@ -4,6 +4,7 @@ import foto1 from "../assets/fotos_carrocel/imagem-temporaria4-hihi.jpg";
 import foto2 from "../assets/fotos_carrocel/imagem-temporaria4-hihi.jpg";
 import foto3 from "../assets/fotos_carrocel/imagem-temporaria2-hihi.webp";
 import foto4 from "../assets/fotos_carrocel/imagem-temporaria2-hihi.webp";
+import fotoIcone from "../assets/icone-chapeu.png";
 
 import { AiFillPushpin } from "react-icons/ai";
 
@@ -14,6 +15,10 @@ function Portfolio() {
     <div className="portfolio-container">
       <div className="portfolio">
         <div className="texto-portfolio-container">
+          <div className="icone-chapeu-container">
+            <img src={fotoIcone} alt="icone da empresa recreya" className="icone-chapeu" />
+          </div>
+          
           <h2 className="titulo-portfolio">
             Desde 20XX Atuando em festas para todas as famílias
           </h2>
