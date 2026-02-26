@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Star, ChevronRight, ChevronLeft, MessageCircle, MessageCircleCheck } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
@@ -109,8 +109,8 @@ const Comentarios = () => {
                   <FaWhatsapp size={30} className="text-white" />
                 </div>
             </button>
+          </div>
         </div>
-
       </div>
       
     </section>

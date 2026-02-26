@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 
+
 // 1. IMPORT OBRIGATÓRIO DO BOOTSTRAP (Para a Navbar cinza funcionar)
 import 'bootstrap/dist/css/bootstrap.min.css';
 
