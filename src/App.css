@@ -1,0 +1,13 @@
+.init-hidden {
+    opacity: 0;
+    transition: opacity 1s linear;
+    transform: translateY(80px);
+    transition: all 1s ease-in-out;
+
+
+}
+
+.init-hidden-off {
+    opacity: 1;
+    transform: translateY(0);
+}
