@@ -179,23 +179,6 @@
 }
 
 /*---------------------------------*/
-.init-hidden {
-    opacity: 0;
-    transition: opacity 1s linear;
-    transform: translateY(50px);
-    transition: all 0.8s ease-in-out;
-
-    flex: 1 1 45%;
-    min-width: 320px;
-
-}
-
-.init-hidden-off {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/*---------------------------------*/
 
 @media(max-width: 1024px) {
     .titulo-sessao {
