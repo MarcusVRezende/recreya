@@ -48,6 +48,18 @@ function App() {
           <Services />
           <Comentarios />
         </main>
+      </div>
+    
+      <div>
+        <Letreiro />
+      </div>
+      <div>
+      <Services/>
+      </div>
+      <div>
+        <Comentarios />
+      </div>
+      <div>
         <Footer />
       </div>
     </>
