@@ -9,7 +9,6 @@ import "../styles/Inicio.css";
 
 function Inicio() {
   return (
-    
     <div className="inicio" id="home">
       <div className="primeira-parte-inicio">
         <div className="titulo-inicio-container">
@@ -23,18 +22,18 @@ function Inicio() {
           <button className="botao-inicio">Quero uma festa</button>
           <button className="botao-inicio">Quero uma festa</button>
         </div>
-        <p className="subtitulo-inicio">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor cumque,
-          quam id eos dignissimos praesentium corporis, culpa.
-        </p>
       </div>
 
       <div className="segunda-parte-inicio">
         <div className="imagem-fixa-container">
-          <img src={fotoFixa} alt="foto da empresa recreya" className="imagem-fixa" />
+          <img
+            src={fotoFixa}
+            alt="foto da empresa recreya"
+            className="imagem-fixa"
+          />
         </div>
         <div className="carrocel-container">
-          <Carousel>
+          <Carousel controls={false} indicators={false} interval={2000}>
             <Carousel.Item>
               <img src={foto1} alt="First slide" className="foto-carrocel" />
             </Carousel.Item>

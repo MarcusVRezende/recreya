@@ -1,29 +1,8 @@
 import "../styles/sobre.css";
 import fotoSobre from "../assets/imagem-temporaria-hihi.jpg";
 import { FaRegHeart } from "react-icons/fa";
-import React, { useEffect } from "react";
 
 function Sobre() {
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("init-hidden-off");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: [0, 0.5, 1],
-      },
-    );
-    const elements = document.querySelectorAll(".init-hidden");
-    elements.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <div className="sessao-sobre" id="sobre">
       <h1 className="titulo-sessao">Sobre Nós</h1>

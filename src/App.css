@@ -3,8 +3,6 @@
     transition: opacity 1s linear;
     transform: translateY(80px);
     transition: all 1s ease-in-out;
-
-
 }
 
 .init-hidden-off {
