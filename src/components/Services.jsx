@@ -50,10 +50,10 @@ const Services = () => {
   const [activeTab, setActiveTab] = useState("recreacao");
   const activeContent = servicesData.find((s) => s.id === activeTab);
 
-  return (
-    <section className="py-10 relative w-full overflow-hidden" id="servicos">
-      <style>
-        {`
+    return (
+        <section className="py-10 relative w-full overflow-hidden" id='servicos'>
+            <style>
+                {`
           @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
           
           .font-luckiest {
@@ -102,17 +102,15 @@ const Services = () => {
     px-4 
     max-w-md mx-auto             /* Limita a largura no mobile para os botões não esticarem muito */
     md:max-w-none                /* Libera a largura no desktop */
-"
-          >
-            {servicesData.map((service) => {
-              const Icon = service.icon;
-              return (
-                <button
-                  style={{ marginBottom: "30px" }}
-                  key={service.id}
-                  onClick={() => setActiveTab(service.id)}
-                  className={`
-                    !rounded-full py-2 px-3 md:px-8 md:py-3 
+">
+                    {servicesData.map((service) => {
+                        const Icon = service.icon;
+                        return (
+                            <button
+                                key={service.id}
+                                onClick={() => setActiveTab(service.id)}
+                                className={`
+                    !rounded-full !py-2 !px-3 !md:px-8 !md:py-3 
                     !flex items-center !justify-center !gap-2
                    !border-2 !border-white !shadow-lg
                     font-luckiest text-sm !md:text-xl !tracking-wider !transition-all duration-300
