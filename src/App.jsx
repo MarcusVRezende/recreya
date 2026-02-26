@@ -25,12 +25,13 @@ function App(){
       </div>
     
       <div>
+        <Letreiro />
+      </div>
+      <div>
       <Services/>
       </div>
       <div>
         <Comentarios />
-      </div>
-      <div>
       </div>
       <div>
         <Footer />
