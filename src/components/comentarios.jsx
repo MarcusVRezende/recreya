@@ -88,13 +88,14 @@ const Comentarios = () => {
   };
 
   return (
-    <section className="bg-transparent py-16 overflow-hidden">
+    <section className="bg-transparent py-24 overflow-hidden">
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
         .font-luckiest { font-family: 'Luckiest Guy', cursive; }
         
         /* Remove o vazamento lateral dos cards */
         .slick-list { 
+        padding-top: 0px !important;
             overflow: hidden !important; 
             margin: 0 -12px; /* Compensa o padding dos cards para alinhar com as setas */
         }

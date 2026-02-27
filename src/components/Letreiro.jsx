@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/letreiro.css";
 // IMPORTANTE: Ajuste o caminho das suas imagens aqui
 import iconFace from "../assets/Logo1.png";
 import logoText from "../assets/Logo2.png";

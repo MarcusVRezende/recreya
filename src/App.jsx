@@ -43,10 +43,12 @@ function App() {
           <Inicio />
 
           <Portfolio />
-          <Letreiro />
+
           <Sobre />
           <Services />
+
           <Comentarios />
+          <Letreiro />
         </main>
       </div>
 

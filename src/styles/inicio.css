@@ -1,17 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lemon&display=swap');
 
 .inicio {
+
     background-blend-mode: overlay;
     min-width: 100%;
     width: 100%;
     margin: 0;
     padding: 5%;
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .primeira-parte-inicio {
-    width: 90%;
+    width: 100%;
     padding: 50px 20px;
 
 }
@@ -57,7 +59,7 @@
     font-weight: 700;
     font-size: 1.2rem;
     background-color: #2FB5FF;
-    padding: 35px;
+    padding: 25px;
     border-radius: 20px;
     border: 2px solid #FFE04C;
     animation: CorAlternada2 1s infinite alternate;
