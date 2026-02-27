@@ -1,29 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+.sessao-sobre-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .sessao-sobre {
-    background-color: transparent; 
-    background-image: none;
-
-    padding: 20px 20px;
-
-    width: 100%;
-    height: 100%;
+    background-color: transparent;
+    padding: 50px 20px;
 }
 
-.titulo-sessao {
-    margin-left: 2.5%;
-    padding: 20px;
-    color: #FF9141;
-    font-weight: 800;
-    font-size: 3.5rem;
-    -webkit-text-stroke: 1px rgb(255, 255, 255);
-    text-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
-
-}
 
 .sobre {
     display: flex;
+    justify-content: center;
 }
 
 .foto-sobre-container {
@@ -32,10 +23,15 @@
     filter: drop-shadow(0 0 1rem rgba(0, 0, 0, 0.35));
 }
 
+.foto-sobre:hover {
+    transform: scale(1.01);
+    transition: all 0.4s ease;
+    box-shadow: 0px 0px 15px #ffffff;
+}
+
 .foto-sobre {
     border-radius: 50px;
-    width: 95%;
-    height: 100%;
+    width: 600px;
 }
 
 .primeira-parte {
@@ -47,11 +43,6 @@
     padding: 10px;
     width: 100%;
     justify-content: center;
-    max-width: 100%;
-    max-width: 1200px;
-    margin: 0px auto 0 auto;
-
-    gap: 30px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -59,18 +50,22 @@
 /*------------ Bloco Branco --------------*/
 .texto-foto-container {
     padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .texto-foto {
     font-family: "Inter", sans-serif;
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-align: justify;
     color: white;
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
 
-    margin-left: 4.5%;
-    margin-right: 4.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+
 }
 
 .figura-titulo-bloco {
@@ -113,7 +108,7 @@
 .titulo-bloco {
     font-family: "Inter", sans-serif;
     padding: 15px 5px;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     font-weight: 600;
     color: #FF9141;
 
@@ -126,14 +121,13 @@
 
 .texto-bloco {
     font-family: "Inter", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     text-align: justify;
     color: rgba(0, 0, 0, 0.8);
 }
 
 /*------------ Bloco Laranja --------------*/
-
 .bloco-sobre-dois {
     background-color: #FF9141;
     padding: 15px;
@@ -148,7 +142,7 @@
 .titulo-bloco-dois {
     font-family: "Inter", sans-serif;
     padding: 15px 5px;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     font-weight: 700;
     color: #fdfdfd;
 }
@@ -172,7 +166,7 @@
 
 .texto-bloco-dois {
     font-family: "Inter", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 600;
     text-align: justify;
     color: white;
@@ -181,10 +175,7 @@
 /*---------------------------------*/
 
 @media(max-width: 1024px) {
-    .titulo-sessao {
-        margin-left: 0%;
-        font-size: 3.5rem;
-    }
+
 
     .foto-sobre {
         width: 100%;
@@ -200,7 +191,7 @@
     .titulo-bloco,
     .titulo-bloco-dois {
         padding: 14px 5px;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .segunda-parte {
@@ -209,7 +200,7 @@
     }
 
     .texto-bloco-container {
-        padding: 10px;
+        padding: 0px;
         width: 100%;
     }
 
@@ -221,7 +212,7 @@
     .logo-bloco-sobre,
     .logo-bloco-sobre-dois {
         width: 55px;
-        height: 65px;
+        height: 60px;
     }
 }
 
@@ -270,10 +261,6 @@
         height: 50px;
     }
 
-    .titulo-sessao {
-        margin-left: 0%;
-        font-size: 3rem;
-    }
 }
 
 @media(max-width: 700px) {
@@ -288,9 +275,6 @@
         height: 100%;
     }
 
-    .titulo-sessao {
-        text-align: center;
-    }
 
     .texto-foto {
         font-size: 1.07rem;
@@ -326,19 +310,13 @@
         font-size: 1rem;
     }
 
-    .titulo-sessao {
-        font-size: 3rem;
-    }
-
     .init-hidden {
         min-width: 100%;
     }
 }
 
 @media(max-width: 320px) {
-    .titulo-sessao {
-        font-size: 2.5rem;
-    }
+
 
     .foto-sobre {
         border-radius: 10px;

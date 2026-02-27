@@ -77,10 +77,11 @@ const Services = () => {
         <div className="relative text-center mb-12">
           <h2
             style={{ color: "#FFE04C", WebkitTextFillColor: "#FFE04C" }}
-            className="font-luckiest !text-7xl md:!text-8xl text-stroke-blue drop-shadow-md relative z-10"
+            className="font-luckiest !text-4xl md:!text-7xl text-stroke-blue drop-shadow-md relative z-10"
           >
             NOSSOS SERVIÇOS
           </h2>
+          
 
           <div className="absolute top-10 -right-4 md:right-10 animate-bounce ">
             <Balloon className="text-red-400 fill-red-100 rotate-12 opacity-80 w-12 h-12 md:w-20 md:h-20" />
@@ -132,7 +133,7 @@ const Services = () => {
         <div className="init-hidden">
           <div
             className="bg-white rounded-[40px] !p-6 md:p-10 shadow-2xl relative z-10 flex flex-col lg:flex-row gap-12 items-center border-8 border-gray-50"
-            style={{ marginBottom: "100px", marginTop: "50px" }}
+            style={{ marginBottom: "0px", marginTop: "30px" }}
           >
             <div className="flex-1 w-full text-center lg:text-left">
               <h3 className="font-luckiest !text-5xl md:!text-6xl text-white text-stroke-orange drop-shadow-sm mb-8 uppercase">

@@ -36,6 +36,7 @@ function App() {
   return (
     <>
       <div className="app-container">
+        
         <div>
           <MyNavbar />
         </div>
@@ -43,10 +44,12 @@ function App() {
           <Inicio />
 
           <Portfolio />
-          <Letreiro />
+
           <Sobre />
           <Services />
+
           <Comentarios />
+          <Letreiro />
         </main>
       </div>
 
