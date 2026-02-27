@@ -58,25 +58,24 @@ const Comentarios = () => {
   };
 
   return (
-    <section className="bg-transparent py-16 overflow-hidden">
+    <section className="bg-transparent !py-16 !overflow-hidden">
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
         .font-luckiest { font-family: 'Luckiest Guy', cursive; }
         
-        /* Remove o vazamento lateral dos cards */
         .slick-list { 
             overflow: hidden !important; 
-            margin: 0 -12px; /* Compensa o padding dos cards para alinhar com as setas */
+            margin: 0 -12px; 
         }
         .slick-track { display: flex !important; }
         .slick-slide { height: inherit !important; }
 
-        /* Estilização dos pontinhos (dots) */
-        .slick-dots li button:before { color: #38BDF8 !important; opacity: 0.5; font-size: 12px; }
-        .slick-dots li.slick-active button:before { color: #38BDF8 !important; opacity: 1; }
+
+        .slick-dots li button:before { color: #616161 !important; opacity: 0.5; font-size: 12px; }
+        .slick-dots li.slick-active button:before { color: #505050 !important; opacity: 1; }
       `}</style>
 
-      <div className="container mx-auto px-10 relative" id='comentarios'>
+      <div className="!container mx-auto px-10 relative" id='comentarios'>
         
         <Slider {...settings}>
           {testimonialsData.map((item) => (
@@ -111,7 +110,7 @@ const Comentarios = () => {
             </button>
           </div>
         </div>
-      </div>
+     
       
     </section>
   );

@@ -12,6 +12,7 @@ import Services from "./components/Services";
 import Comentarios from "./components/comentarios";
 import Letreiro from "./components/Letreiro";
 import Portfolio from "./componentes/Portfolio";
+import Fale_Conosco from "./components/Fale_conosco";
 
 
 
@@ -43,9 +44,7 @@ function App() {
         </div>
         <main>
           <Inicio />
-          <Portfolio />
           <Sobre />
-          <Services />
           <Comentarios />
         </main>
       </div>
@@ -57,7 +56,11 @@ function App() {
       <Services/>
       </div>
       <div>
+         <Portfolio />
         <Comentarios />
+      </div>
+      <div>
+        <Fale_Conosco />
       </div>
       <div>
         <Footer />

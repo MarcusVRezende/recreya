@@ -1,82 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
 
-/* --- CONFIGURAÇÃO GLOBAL DO SCROLL --- */
 html {
-    scroll-behavior: smooth; /* Rolagem suave */
-    /* Isso garante que quando clicar no link, ele pare 110px ANTES do topo (100px da barra + 10px de respiro) */
-    scroll-padding-top: 110px; 
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; 
 }
 
 body {
-    /* Empurra o site para baixo para não ficar atrás da barra fixa */
     padding-top: 100px; 
 }
 
-/* --- AJUSTE PARA MOBILE (OPCIONAL MAS RECOMENDADO) --- */
-/* Se no celular a barra for menor, ajuste aqui para não sobrar espaço branco */
-@media (max-width: 991px) {
-    body {
-        padding-top: 90px; /* Ajuste conforme a altura real no mobile */
-    }
-    html {
-        scroll-padding-top: 100px;
-    }
-}
-
-/* --- SUA NAVBAR --- */
 .navbar-recreya {
     font-family: 'Fredoka', sans-serif;
-    background-color: #ffffff; /* Fundo branco para não ver o conteúdo passando atrás */
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* Aumentei um pouco a sombra para destacar mais */
+    background-color: #ffffff;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+    box-shadow: 0 4px 15px rgba(240, 233, 233, 0.05);
 }
 
+
+.logo-main {
+    height: 55px; 
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-main:hover {
+    transform: scale(1.05);
+}
+
+.navbar-scrolled {
+    margin-left: 20px; 
+    border-bottom-left-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px); /* Efeito vidro */
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
+    padding: 10px 0 !important;
+}
+
+
 .nav-link-custom {
-    color: #000000 !important; 
+    color: #333 !important; 
     font-weight: 600;
-    font-size: 1.1rem;
-    margin: 0 15px; 
+    font-size: 1rem;
+    margin: 0 12px; 
     position: relative;
-    transition: color 0.3s ease;
+    padding: 8px 15px !important;
+    transition: all 0.3s ease;
+    border-radius: 12px;
 }
 
 .nav-link-custom:hover {
-    color: #5BC0F8 !important; 
+    color: #5BC0F8 !important;
+    background-color: rgba(254, 254, 254, 0.08); 
 }
 
-/* Estado ativo */
 .nav-link-custom.active {
-    color: #5BC0F8 !important; 
+    color: #5BC0F8 !important;
 }
 
-/* O risquinho embaixo do link ativo */
 .nav-link-custom.active::after {
     content: '';
     display: block;
-    width: 100%;
+    width: 20px; 
     height: 3px; 
     background-color: #5BC0F8; 
     position: absolute;
-    bottom: -5px; 
-    border-radius: 2px;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
 }
 
-/* --- BOTÃO FALE CONOSCO --- */
 .btn-fale-conosco {
-    background-color: #8df377; 
-    color: #000000;
+    background: linear-gradient(135deg, #8df377 0%, #76e05f 100%);
+    color: #1a4d12; 
     font-weight: 600;
     border-radius: 50px; 
-    padding: 8px 24px;
+    padding: 10px 28px;
     display: flex;
     align-items: center;
-    gap: 8px; 
+    gap: 10px; 
     text-decoration: none;
-    transition: transform 0.2s, background-color 0.2s;
-    box-shadow: 0 4px 0 #75cf63; /* Efeito 3D legal */
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(141, 243, 119, 0.3);
 }
 
 .btn-fale-conosco:hover {
-    background-color: #7ce066;
-    transform: translateY(2px); /* Efeito de apertar o botão */
-    box-shadow: 0 2px 0 #75cf63; /* Sombra diminui quando aperta */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(141, 243, 119, 0.4);
+    color: #1a4d12;
+}
+
+.btn-fale-conosco:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 991px) {
+    .navbar-scrolled {
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 20px; 
+    }
+
+    .btn-fale-conosco {
+        justify-content: center;
+    }
 }
