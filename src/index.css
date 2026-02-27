@@ -1,29 +1,39 @@
 @import "tailwindcss";
 
 body {
-   background-image: url('./assets/fundo.png');
-
-   /* MUDANÇA 1: Ajuste o tamanho. 
-     'cover' dá zoom e corta. 
-     '100% auto' garante que a largura caiba inteira e a altura flua naturalmente. */
-   background-size: 100% auto;
-
-   /* MUDANÇA 2: A Posição Mágica.
-     'center' alinha no meio (cortando o topo).
-     'center 100px' diz: Centraliza horizontalmente, mas começa 100px de cima para baixo. */
-   background-position: center 100px;
-
-   background-repeat: no-repeat;
-
-   background-color: #fcfcfc;
-   /* Uma cor de fundo caso a imagem demore a carregar */
-   /* Removi o blend-mode overlay pois com fundo branco ele pode estourar as cores */
-
-   margin: 0;
-
-   /* Mantém o padding para empurrar o CONTEÚDO (texto/slider), não a imagem */
-   padding-top: 100px;
-   image-rendering: -webkit-optimize-contrast;
-   /* Para Chrome/Safari */
-   image-rendering: crisp-edges;
+  /* Imagem Padrão (Mobile) */
+  background-image: url('../public/fundo-geral2.png')!important;
+  background-size: 100% auto;
+  background-position: center 100px;
+  background-repeat: no-repeat;
+  background-color: #fcfcfc;
+  margin: 0;
+  padding-top: 100px;
+  image-rendering: -webkit-optimize-contrast;
 }
+@media (min-width: 320px) {
+  body {
+    background-image: url('../public/fundo-325.png')!important;
+  }
+}
+@media (min-width: 425px) {
+  body {
+    background-image: url('../public/fundo-425.png')!important;
+  }
+}
+@media (min-width: 720px) {
+  body {
+    background-image: url('../public/fundo-1024.png')!important;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background-image: url('../public/fundo-1024.png')!important;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    background-image: url('../public/fundo-geral.png')!important;
+  }
+}
+

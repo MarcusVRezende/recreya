@@ -166,11 +166,15 @@
     color: #CA6DF2;
     transform: translate(50%, -60%)rotate(-60deg);
 }
-
+@media(max-width: 1440px) {
+    .portfolio-container {
+        padding-top: 140px;
+    }
+}
 
 @media(max-width: 1215px) {
     .portfolio-container {
-        padding-top: 90px;
+        padding-top: 125px;
 
     }
 

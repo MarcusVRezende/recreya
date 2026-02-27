@@ -88,7 +88,7 @@ const Comentarios = () => {
   };
 
   return (
-    <section className="bg-transparent py-24 overflow-hidden">
+    <section className="bg-transparent py-10 overflow-hidden">
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
         .font-luckiest { font-family: 'Luckiest Guy', cursive; }

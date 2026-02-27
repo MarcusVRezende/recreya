@@ -191,7 +191,7 @@
     .titulo-bloco,
     .titulo-bloco-dois {
         padding: 14px 5px;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .segunda-parte {
@@ -200,7 +200,7 @@
     }
 
     .texto-bloco-container {
-        padding: 10px;
+        padding: 0px;
         width: 100%;
     }
 
@@ -212,7 +212,7 @@
     .logo-bloco-sobre,
     .logo-bloco-sobre-dois {
         width: 55px;
-        height: 65px;
+        height: 60px;
     }
 }
 

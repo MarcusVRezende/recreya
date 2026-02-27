@@ -30,7 +30,7 @@ const Letreiro = () => {
           }
             .letreiro-container{
             padding-top: 1%;
-            padding-bottom: 1%;
+            padding-bottom: 0%;
           }
         `}
         </style>
