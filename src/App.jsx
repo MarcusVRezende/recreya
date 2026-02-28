@@ -12,6 +12,7 @@ import Services from "./components/Services";
 import Comentarios from "./components/comentarios";
 import Letreiro from "./components/Letreiro";
 import Portfolio from "./componentes/Portfolio";
+import Fale_Conosco from "./components/Fale_conosco";
 
 function App() {
   useEffect(() => {
@@ -49,10 +50,11 @@ function App() {
           <Services />
 
           <Comentarios />
+          <Fale_Conosco />
           <Letreiro />
         </main>
       </div>
-
+      
       <div>
         <Footer />
       </div>
