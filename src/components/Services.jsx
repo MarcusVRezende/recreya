@@ -50,10 +50,10 @@ const Services = () => {
   const [activeTab, setActiveTab] = useState("recreacao");
   const activeContent = servicesData.find((s) => s.id === activeTab);
 
-    return (
-        <section className="py-10 relative w-full overflow-hidden" id='servicos'>
-            <style>
-                {`
+  return (
+    <section className="py-10 relative w-full overflow-hidden" id='servicos'>
+      <style>
+        {`
           @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
           
           .font-luckiest {
@@ -81,7 +81,7 @@ const Services = () => {
           >
             NOSSOS SERVIÇOS
           </h2>
-          
+
 
           <div className="absolute top-10 -right-4 md:right-10 animate-bounce ">
             <Balloon className="text-red-400 fill-red-100 rotate-12 opacity-80 w-12 h-12 md:w-20 md:h-20" />
@@ -104,26 +104,31 @@ const Services = () => {
     max-w-md mx-auto             /* Limita a largura no mobile para os botões não esticarem muito */
     md:max-w-none                /* Libera a largura no desktop */
 ">
-                    {servicesData.map((service) => {
-                        const Icon = service.icon;
-                        return (
-                            <button
-                                key={service.id}
-                                onClick={() => setActiveTab(service.id)}
-                                className={`
-                    !rounded-full !py-2 !px-3 !md:px-8 !md:py-3 
-                    !flex items-center !justify-center !gap-2
-                   !border-2 !border-white !shadow-lg
-                    font-luckiest text-sm !md:text-xl !tracking-wider !transition-all duration-300
-                    !w-full md:w-auto           /* Ocupa a célula do grid no mobile, largura automática no desktop */
-                    ${
-                      activeTab === service.id
-                        ? "bg-[#FF9141] text-white transform scale-105 z-30"
-                        : "bg-[#38BDF8] text-white hover:bg-[#30aadd]"
+            {servicesData.map((service) => {
+              const Icon = service.icon;
+              return (
+                <button
+                  key={service.id}
+                  onClick={() => setActiveTab(service.id)}
+                  className={`
+    !rounded-full !py-2 !px-3 !md:px-8 !md:py-3 
+    !flex items-center !justify-center !gap-2
+    !border-2 !border-white !shadow-lg
+    font-luckiest text-sm !md:text-xl !tracking-wider !transition-all duration-300
+    !w-full md:w-auto
+    /* NOVAS CLASSES ABAIXO */
+    group hover:-translate-y-1 hover:scale-105 active:scale-95
+    ${activeTab === service.id
+                      ? "bg-[#FF9141] text-white transform scale-105 z-30"
+                      : "bg-[#38BDF8] text-white hover:bg-[#30aadd]"
                     }
-                `}
+  `}
                 >
-                  <Icon size={18} strokeWidth={2.5} className="md:w-6 md:h-6" />
+                  <Icon
+                    size={18}
+                    strokeWidth={2.5}
+                    className="md:w-6 md:h-6 transition-transform duration-300 group-hover:rotate-12 group-hover:scale-110"
+                  />
                   <span className="truncate">{service.label}</span>
                 </button>
               );
@@ -146,12 +151,20 @@ const Services = () => {
                 </p>
               </div>
 
-              <button className="bg-[#38BDF8] hover:bg-[#FF9141] text-white font-luckiest text-2xl py-4 px-10 !rounded-full shadow-[0_6px_0_#0ea5e9] hover:shadow-[0_6px_0_#e67e22] active:shadow-none active:translate-y-1 transition-all flex items-center gap-3 mx-auto lg:mx-0 group">
+              <button className="
+  bg-[#38BDF8] hover:bg-[#FF9141] 
+  text-white font-luckiest text-2xl py-4 px-10 
+  !rounded-full shadow-[0_6px_0_#0ea5e9] hover:shadow-[0_6px_0_#e67e22] 
+  active:shadow-none active:translate-y-1 
+  transition-all flex items-center gap-3 mx-auto lg:mx-0 group
+  /* NOVAS CLASSES ABAIXO */
+  hover:scale-105 hover:brightness-110
+">
                 EU QUERO SABER MAIS
                 <ChevronRight
                   size={32}
                   strokeWidth={3}
-                  className="group-hover:translate-x-2 transition-transform"
+                  className="transition-transform duration-300 group-hover:translate-x-3 group-hover:scale-125"
                 />
               </button>
             </div>

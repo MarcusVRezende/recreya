@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+/* --- BLINDAGEM BASE --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.comentarios-section {
+    padding: 80px 0;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    /* Se quiser colocar aquela textura de fundo da imagem, adicione o background-image aqui */
+}
+
+.comentarios-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 50px; 
+    position: relative;
+}
+
+/* --- TRUQUE PARA ALTURA IGUAL NOS CARDS DO SLICK --- */
+.slick-track {
+    display: flex !important;
+    padding: 20px 0; /* Espaço para a animação de hover não cortar */
+}
+
+.slick-slide {
+    height: inherit !important; 
+    display: flex !important;
+    justify-content: center;
+}
+
+.slick-slide > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.slide-item {
+    padding: 0 15px;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+
+/* --- ESTILO DO CARD --- */
+.testimonial-card {
+    background-color: #38BDF8;
+    border-radius: 30px; /* Um pouco mais suave para mobile */
+    padding: 35px 25px;
+    text-align: center;
+    color: white;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 8px solid #2ba9e0;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: default;
+    width: 100%;
+    height: 100%; /* Garante que preencha a altura do pai */
+}
+
+/* Animação ao passar o mouse no Card (desativada no touch por padrão natural) */
+@media (hover: hover) {
+    .testimonial-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.2);
+        background-color: #2ab1eb;
+    }
+    
+    .testimonial-card:hover .user-photo {
+        transform: rotate(10deg) scale(1.1);
+    }
+    
+    .testimonial-card:hover .stars-container {
+        transform: scale(1.1);
+    }
+}
+
+.user-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease;
+    flex-shrink: 0;
+}
+
+.stars-container {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.user-name {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.user-text {
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 0.95rem;
+    margin: 0;
+    opacity: 0.95;
+    /* BLINDAGEM DE TEXTO: Evita que "blablabla" longo quebre o layout */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto; 
+}
+
+/* --- SETAS DE NAVEGAÇÃO --- */
+.arrow-btn {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: #FFC107;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.arrow-btn:hover {
+    background-color: #ffb300;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.arrow-btn:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.prev-arrow { left: -20px; }
+.next-arrow { right: -20px; }
+
+/* --- BOTÃO WHATSAPP --- */
+.cta-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.whatsapp-button {
+    background-color: #FF6B00;
+    color: white;
+    border: none;
+    padding: 18px 40px;
+    border-radius: 50px;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    box-shadow: 0 8px 0 #CC5500;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+}
+
+.whatsapp-button:hover {
+    background-color: #ff7a1a;
+}
+
+/* Efeito de apertar o botão no mobile/desktop */
+.whatsapp-button:active {
+    transform: translateY(8px);
+    box-shadow: 0 0px 0 #CC5500; /* Zera a sombra inferior para dar efeito de pressão */
+}
+
+.whatsapp-button svg {
+    transition: transform 0.4s ease;
+}
+
+.whatsapp-button:hover svg {
+    transform: rotate(15deg) scale(1.1);
+}
+
+/* --- RESPONSIVIDADE MOBILE BLINDADA --- */
+@media (max-width: 768px) {
+    .comentarios-section {
+        padding: 50px 0;
+    }
+
+    .comentarios-container { 
+        padding: 0 15px; 
+    }
+    
+    .arrow-btn { 
+        display: none !important; /* Esconde as setas, foco 100% no swipe do dedo */
+    } 
+    
+    .slide-item {
+        padding: 0 5px; /* Menos margem entre cards em telas pequenas */
+    }
+
+    .testimonial-card { 
+        padding: 25px 20px; /* Reduz o padding interno do card para ganhar espaço útil */
+    }
+
+    .user-photo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .user-name {
+        font-size: 1.3rem;
+    }
+
+    .whatsapp-button { 
+        font-size: 1.1rem; 
+        width: 100%; 
+        max-width: 340px; 
+        padding: 16px 20px;
+    }
+    
+    /* Afasta um pouco os pontinhos do slider para não colarem no botão */
+    .slick-dots {
+        bottom: -35px;
+    }
+}
