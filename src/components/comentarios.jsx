@@ -27,7 +27,7 @@ const Comentarios = () => {
       id: 3,
       name: "Teste 3",
       rating: 4,
-      text: "blablablablablablablablabla lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectetur adipiscing elit. blablablablablablablablabla",
+      text: "blablablablablablablablabla lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, blablablablablablablablabla",
       photo: "https://i.pravatar.cc/150?img=10",
     },
     {
