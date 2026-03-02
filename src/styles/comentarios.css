@@ -128,7 +128,7 @@
 /* --- SETAS DE NAVEGAÇÃO --- */
 .arrow-btn {
     position: absolute;
-    top: 45%;
+    top: 105%;
     transform: translateY(-50%);
     background-color: #FFC107;
     border: none;
@@ -156,18 +156,19 @@
 }
 
 .prev-arrow {
-    left: -20px;
+    left: 86%;
 }
 
 .next-arrow {
-    right: -20px;
+    right: 2%;
 }
 
 /* --- BOTÃO WHATSAPP --- */
 .cta-container {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 70px;
+    margin-bottom: 30px;
 }
 
 .whatsapp-button {
@@ -206,6 +207,7 @@
 .whatsapp-button:hover svg {
     transform: rotate(15deg) scale(1.1);
 }
+
 @media (max-width: 1024px) {
 
     .comentarios-container {
@@ -213,8 +215,6 @@
         width: 900px;
     }
 }
-
-
 
 /* --- RESPONSIVIDADE MOBILE BLINDADA --- */
 @media (max-width: 768px) {
@@ -263,7 +263,12 @@
     .slick-dots {
         bottom: -35px;
     }
+
+    .cta-container {
+        margin-top: 10px;
+    }
 }
+
 @media (max-width: 425px) {
 
     .comentarios-section {
@@ -275,6 +280,7 @@
         width: 350px;
     }
 }
+
 @media (max-width: 375px) {
 
     .comentarios-container {

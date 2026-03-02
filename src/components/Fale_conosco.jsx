@@ -3,13 +3,20 @@ import { FaWhatsapp, FaMapMarkedAlt } from "react-icons/fa";
 
 const FaleConosco = () => {
   return (
-    <div className="!max-w-[1000px] !mx-auto !px-5 !py-1 !flex flex-col md:flex-row items-center !gap-10 font-sans antialiased">
+    <div
+      style={{ marginBottom: "2%" }}
+      className="!max-w-[1000px] !mx-auto !px-5 !py-1 !flex flex-col md:flex-row items-center !gap-10 font-sans antialiased"
+    >
       <div className="!flex-1 !text-center md:text-left flex flex-col !items-center md:items-start font-sans">
         <h2
-          style={{ color: "#2FB5FF", fontWeight: 800,}}
-          className="text-4xl font-extrabold !mb-5 uppercase"
+          style={{
+            color: "black",
+            WebkitTextFillColor: "white",
+            padding: "20px 0px",
+          }}
+          className="font-luckiest !text-4xl md:!text-4xl text-stroke-blue drop-shadow-md relative z-10 md:-mt-10"
         >
-          Fale Conosco
+          Fale conosco
         </h2>
 
         <p className=" text-lg leading-relaxed !mb-5 text-slate-600 max-w-md md:max-w-[100%] mx-auto md:mx-0 font-medium">

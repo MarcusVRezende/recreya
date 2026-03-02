@@ -7,6 +7,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/comentarios.css";
 
+const NextArrow = ({ onClick }) => (
+  <button className="arrow-btn next-arrow" onClick={onClick}>
+    <ChevronRight size={30} />
+  </button>
+);
+
+const PrevArrow = ({ onClick }) => (
+  <button className="arrow-btn prev-arrow" onClick={onClick}>
+    <ChevronLeft size={30} />
+  </button>
+);
 const Comentarios = () => {
   const testimonialsData = [
     {
@@ -68,8 +79,8 @@ const Comentarios = () => {
     autoplay: true,
     autoplaySpeed: 4000,
 
-    // nextArrow: <NextArrow />,
-    // prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
   return (
     <section className="comentarios-section">

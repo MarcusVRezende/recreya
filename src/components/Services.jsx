@@ -76,7 +76,7 @@ const Services = () => {
       <Container>
         <div className="relative text-center mb-12">
           <h2
-            style={{ color: "#FFE04C", WebkitTextFillColor: "#FFE04C", padding: "0 10px", marginBottom: "-20px" }}
+            style={{ color: "#FFE04C", WebkitTextFillColor: "#FFE04C", padding: "0px 10px"}}
             className="font-luckiest !text-5xl md:!text-6xl text-stroke-blue drop-shadow-md relative z-10 "
           >
             NOSSOS SERVIÇOS
