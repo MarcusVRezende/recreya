@@ -76,31 +76,31 @@ const Services = () => {
       <Container>
         <div className="relative text-center mb-12">
           <h2
-            style={{ color: "#FFE04C", WebkitTextFillColor: "#FFE04C" }}
-            className="font-luckiest !text-4xl md:!text-7xl text-stroke-blue drop-shadow-md relative z-10"
+            style={{ color: "#FFE04C", WebkitTextFillColor: "#FFE04C", padding: "0 10px", marginBottom: "-20px" }}
+            className="font-luckiest !text-5xl md:!text-6xl text-stroke-blue drop-shadow-md relative z-10 "
           >
             NOSSOS SERVIÇOS
           </h2>
 
 
-          <div className="absolute top-10 -right-4 md:right-10 animate-bounce ">
+          <div className="absolute top-5 -right-4 md:right-10 animate-bounce ">
             <Balloon className="text-red-400 fill-red-100 rotate-12 opacity-80 w-12 h-12 md:w-20 md:h-20" />
           </div>
 
-          <div className="absolute top-10 -left-4 md:left-10 animate-bounce ">
+          <div className="absolute top-5 -left-4 md:left-10 animate-bounce ">
             <Balloon className="text-blue-400 fill-blue-100 rotate-12 opacity-80 w-12 h-12 md:w-20 md:h-20" />
           </div>
         </div>
         <div className="init-hidden">
           <div
             className="
-    grid grid-cols-2             
-    !md:flex md:flex-nowrap      
+    grid grid-cols-2 md:grid-cols-4        
+    !md:flex md:flex-wrap      
     justify-center 
-    gap-3 md:gap-4 
-    mb-[-25px] 
+    gap-2 md:gap-10 
+    mb-[-15px] 
     relative z-20 
-    px-4 
+    px-2 md:px-0 
     max-w-md mx-auto             /* Limita a largura no mobile para os botões não esticarem muito */
     md:max-w-none                /* Libera a largura no desktop */
 ">
@@ -116,8 +116,7 @@ const Services = () => {
     !border-2 !border-white !shadow-lg
     font-luckiest text-sm !md:text-xl !tracking-wider !transition-all duration-300
     !w-full md:w-auto
-    /* NOVAS CLASSES ABAIXO */
-    group hover:-translate-y-1 hover:scale-105 active:scale-95
+    group hover:-translate-y-1 hover:scale-100 active:scale-95
     ${activeTab === service.id
                       ? "bg-[#FF9141] text-white transform scale-105 z-30"
                       : "bg-[#38BDF8] text-white hover:bg-[#30aadd]"
@@ -137,16 +136,16 @@ const Services = () => {
         </div>
         <div className="init-hidden">
           <div
-            className="bg-white rounded-[40px] !p-6 md:p-10 shadow-2xl relative z-10 flex flex-col lg:flex-row gap-12 items-center border-8 border-gray-50"
-            style={{ marginBottom: "0px", marginTop: "30px" }}
+            className="bg-white rounded-[40px] !p-6 md:p-10 shadow-2xl relative z-10 flex flex-col lg:flex-row gap-10 items-center border-8 border-gray-50"
+            style={{ marginBottom: "0px", marginTop: "25px" }}
           >
             <div className="flex-1 w-full text-center lg:text-left">
-              <h3 className="font-luckiest !text-5xl md:!text-6xl text-white text-stroke-orange drop-shadow-sm mb-8 uppercase">
+              <h3 className="font-luckiest !text-4xl md:!text-6xl text-white text-stroke-orange drop-shadow-sm mb-4 uppercase">
                 {activeContent.title}
               </h3>
 
-              <div className="font-sans text-gray-700 font-bold text-lg leading-relaxed mb-10 text-justify">
-                <p className="first-letter:text-4xl first-letter:text-[#FF9141]">
+              <div className="text-sm md:text-lg font-sans  text-gray-600 font-bold text-lg leading-relaxed mb-5 text-justify">
+                <p className="first-letter:text-3xl first-letter:text-[#FF9141]">
                   {activeContent.description}
                 </p>
               </div>
@@ -156,14 +155,14 @@ const Services = () => {
   text-white font-luckiest text-2xl py-4 px-10 
   !rounded-full shadow-[0_6px_0_#0ea5e9] hover:shadow-[0_6px_0_#e67e22] 
   active:shadow-none active:translate-y-1 
-  transition-all flex items-center gap-3 mx-auto lg:mx-0 group
+  transition-all flex items-center gap-1 mx-auto lg:mx-0 group
   /* NOVAS CLASSES ABAIXO */
   hover:scale-105 hover:brightness-110
 ">
                 EU QUERO SABER MAIS
                 <ChevronRight
-                  size={32}
-                  strokeWidth={3}
+                  size={30}
+                  strokeWidth={4}
                   className="transition-transform duration-300 group-hover:translate-x-3 group-hover:scale-125"
                 />
               </button>
@@ -182,7 +181,7 @@ const Services = () => {
                 />
               </div>
 
-              <div className="col-span-1 row-span-1 rounded-3xl overflow-hidden border-8 border-white shadow-lg">
+              <div className="col-span-2 md:col-span-1 row-span-1 rounded-3xl overflow-hidden border-8 border-white shadow-lg">
                 <img
                   src="src/assets/Fotos_servicos/imagem-temporaria-2.jpg"
                   alt="Detalhe"
@@ -190,7 +189,7 @@ const Services = () => {
                 />
               </div>
 
-              <div className="col-span-1 row-span-1 rounded-3xl overflow-hidden border-8 border-white shadow-lg">
+              <div className="col-span-2 md:col-span-1 row-span-1 rounded-3xl overflow-hidden border-8 border-white shadow-lg">
                 <img
                   src="src/assets/Fotos_servicos/imagem-temporaria-3.jpg"
                   alt="Momento"
