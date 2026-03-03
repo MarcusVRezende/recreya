@@ -2,7 +2,6 @@
 
 body {
   /* Imagem Padrão (Mobile) */
-  background-image: url('../public/fundo-geral2.png')!important;
   background-size: 100% auto;
   background-position: center 100px;
   background-repeat: no-repeat;
@@ -10,30 +9,36 @@ body {
   margin: 0;
   padding-top: 100px;
   image-rendering: -webkit-optimize-contrast;
+
+  transition: background-image 0.5s ease-in-out;
 }
+
 @media (min-width: 320px) {
   body {
-    background-image: url('../public/fundo-325.png')!important;
-  }
-}
-@media (min-width: 425px) {
-  body {
-    background-image: url('../public/fundo-425.png')!important;
-  }
-}
-@media (min-width: 720px) {
-  body {
-    background-image: url('../public/fundo-1024.png')!important;
-  }
-}
-@media (min-width: 1024px) {
-  body {
-    background-image: url('../public/fundo-1024.png')!important;
-  }
-}
-@media (min-width: 1440px) {
-  body {
-    background-image: url('../public/fundo-geral.png')!important;
+    background-image: url('../public/fundo-325.png') !important;
   }
 }
 
+@media (min-width: 425px) {
+  body {
+    background-image: url('../public/fundo-325.png') !important;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url('../public/fundo-768.png') !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url('../public/fundo-1024.png') !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url('../public/fundo-geral.png') !important;
+  }
+}
