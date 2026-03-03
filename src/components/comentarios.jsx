@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
@@ -8,51 +8,80 @@ import "slick-carousel/slick/slick-theme.css";
 import "../styles/comentarios.css";
 
 const NextArrow = ({ onClick }) => (
-  <button className="arrow-btn next-arrow" onClick={onClick} aria-label="Próximo">
-    <ChevronRight size={32} strokeWidth={3} />
+  <button className="arrow-btn next-arrow" onClick={onClick}>
+    <ChevronRight size={30} />
   </button>
 );
 
 const PrevArrow = ({ onClick }) => (
-  <button className="arrow-btn prev-arrow" onClick={onClick} aria-label="Anterior">
-    <ChevronLeft size={32} strokeWidth={3} />
+  <button className="arrow-btn prev-arrow" onClick={onClick}>
+    <ChevronLeft size={30} />
   </button>
 );
-
-const testimonialsData = [
-  { id: 1, name: "Teste 1", rating: 5, text: "O atendimento foi excepcional, super recomendo a todos!", photo: "https://i.pravatar.cc/150?img=7" },
-  { id: 2, name: "Teste 2", rating: 5, text: "blablablablablablablablablablablablablablabla", photo: "https://i.pravatar.cc/150?img=8" },
-  { id: 3, name: "Teste 3", rating: 4, text: "blablablablablablablablabla", photo: "https://i.pravatar.cc/150?img=10" },
-  { id: 4, name: "Teste 4", rating: 5, text: "Qualidade nota 10, voltarei com certeza!", photo: "https://i.pravatar.cc/150?img=12" },
-];
-
 const Comentarios = () => {
+  const testimonialsData = [
+    {
+      id: 1,
+      name: "Teste 1",
+      rating: 5,
+      text: "O atendimento foi excepcional, super recomendo a todos!",
+      photo: "https://i.pravatar.cc/150?img=7",
+    },
+    {
+      id: 2,
+      name: "Teste 2",
+      rating: 5,
+      text: "blablablablablablablablablablablablablablabla",
+      photo: "https://i.pravatar.cc/150?img=8",
+    },
+    {
+      id: 3,
+      name: "Teste 3",
+      rating: 4,
+      text: "blablablablablablablablabla lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, blablablablablablablablabla",
+      photo: "https://i.pravatar.cc/150?img=10",
+    },
+    {
+      id: 4,
+      name: "Teste 4",
+      rating: 5,
+      text: "Qualidade nota 10, voltarei com certeza!",
+      photo: "https://i.pravatar.cc/150?img=12",
+    },
+  ];
+  const [slides, setSlides] = useState(1);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setSlides(1);
+      } else if (window.innerWidth <= 1024) {
+        setSlides(2);
+      } else {
+        setSlides(3);
+      }
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 600,
-    slidesToShow: 3,
+    speed: 800,
+    slidesToShow: slides,
     slidesToScroll: 1,
     swipeToSlide: true,
+    arrows: slides > 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: { slidesToShow: 2, arrows: true }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          arrows: false,
-          dots: true,
-          centerMode: false
-        }
-      },
-    ],
   };
-
   return (
     <section className="comentarios-section">
       <div className="comentarios-container">
@@ -60,7 +89,11 @@ const Comentarios = () => {
           {testimonialsData.map((item) => (
             <div key={item.id} className="slide-item">
               <div className="testimonial-card">
-                <img src={item.photo} alt={`Foto de ${item.name}`} className="user-photo" />
+                <img
+                  src={item.photo}
+                  alt={`Foto de ${item.name}`}
+                  className="user-photo"
+                />
 
                 <div className="stars-container">
                   {[...Array(5)].map((_, i) => (

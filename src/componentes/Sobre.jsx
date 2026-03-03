@@ -11,6 +11,7 @@ function Sobre() {
             color: "#FFE04C",
             WebkitTextFillColor: "#FFE04C",
             textAlign: "center",
+            padding: "20px 0px",
           }}
           className="font-luckiest !text-5xl md:!text-7xl text-stroke-blue drop-shadow-md relative z-10"
         >
