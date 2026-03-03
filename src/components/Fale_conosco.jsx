@@ -45,28 +45,14 @@ const FaleConosco = () => {
           Mandar mensagem
         </a>
       </div>
-      <div>
-        <div className="flex-1 w-full md:h-[350px] border-2 border-[#E05A5A] rounded-[20px] overflow-hidden shadow-inner">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491356.90739743033!2d-48.04754358445082!3d-15.818403744954075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3af2108804d7%3A0x3eba2390c9145056!2sBras%C3%ADlia%20-%20Distrito%20Federal!5e0!3m2!1spt-BR!2sbr!4v1772482450210!5m2!1spt-BR!2sbr"
-            className="md:w-[500px] h-full border-none"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Mapa do Distrito Federal"
-          />
-        </div>
-
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-          className="w-full text-center mt-2 text-sm text-gray-500 display-flex items-center gap-2"
-        >
-          <FaMapMarkedAlt className="text-[#2FB5FF] text-3xl" />
-          <h3 className="md:text-5xl">Atuação: Distrito Federal</h3>
-        </div>
+      <div className="flex-1 w-full md:h-[350px] border-2 border-[#E05A5A] rounded-[20px] overflow-hidden shadow-inner">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491356.90739743033!2d-48.04754358445082!3d-15.818403744954075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3af2108804d7%3A0x3eba2390c9145056!2sBras%C3%ADlia%20-%20Distrito%20Federal!5e0!3m2!1spt-BR!2sbr!4v1772482450210!5m2!1spt-BR!2sbr"
+          className="md:w-[500px] h-full border-none"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Mapa do Distrito Federal"
+        />
       </div>
     </div>
   );
