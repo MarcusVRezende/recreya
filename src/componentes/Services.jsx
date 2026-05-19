@@ -10,6 +10,23 @@ import {
   Puzzle,
 } from "lucide-react";
 
+// --- IMPORTAÇÕES DAS IMAGENS (O segredo para o Vite compilar para o Deploy) ---
+import recreacao1 from "../assets/Fotos_servicos/recreacao/recreacao1.png";
+import recreacao2 from "../assets/Fotos_servicos/recreacao/recreacao2.png";
+import recreacao3 from "../assets/Fotos_servicos/recreacao/recreacao3.png";
+
+import oficina1 from "../assets/Fotos_servicos/oficinas/oficina1.png";
+import oficina2 from "../assets/Fotos_servicos/oficinas/oficina2.png";
+import oficina3 from "../assets/Fotos_servicos/oficinas/oficina3.png";
+
+import pintura1 from "../assets/Fotos_servicos/pintura_de_rosto/pintura1.png";
+import pintura2 from "../assets/Fotos_servicos/pintura_de_rosto/pintura2.png";
+import pintura3 from "../assets/Fotos_servicos/pintura_de_rosto/pintura3.png";
+
+import balao1 from "../assets/Fotos_servicos/balao_mania/balao1.png";
+import balao2 from "../assets/Fotos_servicos/balao_mania/balao2.png";
+import balao3 from "../assets/Fotos_servicos/balao_mania/balao3.png";
+
 const servicesData = [
   {
     id: "recreacao",
@@ -18,9 +35,10 @@ const servicesData = [
     icon: PartyPopper,
     description:
       "Nossa recreação transforma qualquer espaço em um universo de aventura e energia! Com brincadeiras cantadas, gincanas dinâmicas, jogos de cooperação, caça ao tesouro temática e atividades lúdicas adaptadas para cada faixa etária. Garantimos o entretenimento saudável da garotada do início ao fim da festa, mantendo todos engajados, seguros e criando memórias inesquecíveis fora das telas.",
-    image1: "src/assets/Fotos_servicos/recreacao/recreacao1.png",
-    image2: "src/assets/Fotos_servicos/recreacao/recreacao2.png",
-    image3: "src/assets/Fotos_servicos/recreacao/recreacao3.png",
+    // Passando as referências importadas diretamente
+    image1: recreacao1,
+    image2: recreacao2,
+    image3: recreacao3,
   },
   {
     id: "oficinas",
@@ -29,9 +47,9 @@ const servicesData = [
     icon: Palette,
     description:
       "O espaço perfeito para despertar o lado artístico e a imaginação dos pequenos artistas! Promovemos oficinas completas e interativas de Slime personalizado e confecção de pulseiras de Miçangas. O melhor de tudo é que as crianças se divertem criando, desenvolvem a coordenação e ainda levam suas próprias obras de arte para casa como uma lembrancinha exclusiva da sua festa.",
-    image1: "src/assets/Fotos_servicos/oficinas/oficina1.png",
-    image2: "src/assets/Fotos_servicos/oficinas/oficina2.png",
-    image3: "src/assets/Fotos_servicos/oficinas/oficina3.png",
+    image1: oficina1,
+    image2: oficina2,
+    image3: oficina3,
   },
   {
     id: "pintura-de-rosto",
@@ -39,10 +57,10 @@ const servicesData = [
     title: "PINTURA DE ROSTO",
     icon: Baby,
     description:
-      "Transformamos fantasias em realidade através de traços coloridos e cheios de brilho! Nossa maquiagem artística utiliza materiais profissionais totalmente hipoalergênicos e específicos para a pele sensível das crianças. Com designs incríveis de heróis, princesas, animais, flores e elementos abstratos cheios de glitter, os pequenos entram no personagem com segurança, levando mais cor, encanto e magia para as fotos do evento.",
-    image1: "src/assets/Fotos_servicos/pintura_de_rosto/pintura1.png",
-    image2: "src/assets/Fotos_servicos/pintura_de_rosto/pintura2.png",
-    image3: "src/assets/Fotos_servicos/pintura_de_rosto/pintura3.png",
+      "Transformamos fantasias em realidade através de traços coloridos e cheios de brilho! Nossa maquiagem artística utiliza materiais profissionais totalmente hipoalergênicos e específicos para a pele sensível das crianças. Com designs incríveis de heróis, princesas, animais, flores e elements abstratos cheios de glitter, os pequenos entram no personagem com segurança, levando mais cor, encanto e magia para as fotos do evento.",
+    image1: pintura1,
+    image2: pintura2,
+    image3: pintura3,
   },
   {
     id: "balao-mania",
@@ -51,9 +69,9 @@ const servicesData = [
     icon: Rocket,
     description:
       "Arte e modelagem em balões que encantam e fascinam os convidados de todas as idades! Nossos recreadores criam esculturas dinâmicas em tempo real, desde espadas, cachorrinhos, coroas e corações até flores coloridas. É uma atração super interativa onde cada balão ganha vida nas mãos da nossa equipe e vira um acessório divertido para as brincadeiras da festa, garantindo que ninguém saia de mãos vazias.",
-    image1: "src/assets/Fotos_servicos/balao_mania/balao1.png",
-    image2: "src/assets/Fotos_servicos/balao_mania/balao2.png",
-    image3: "src/assets/Fotos_servicos/balao_mania/balao3.png",
+    image1: balao1,
+    image2: balao2,
+    image3: balao3,
   },
 ];
 
