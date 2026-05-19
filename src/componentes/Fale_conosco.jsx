@@ -25,7 +25,7 @@ const FaleConosco = () => {
         </p>
 
         <a
-          href="https://wa.me/SEUNUMERO"
+          href="https://api.whatsapp.com/message/Q6PAXQS4V6E4P1?autoload=1&app_absent=0&utm_source=ig"
           target="_blank"
           rel="noopener noreferrer"
           className="

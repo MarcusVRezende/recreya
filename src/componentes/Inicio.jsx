@@ -1,10 +1,10 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import foto1 from "../assets/fotos_carrocel/imagem-temporaria-hihi.jpg";
-import foto2 from "../assets/fotos_carrocel/imagem-temporaria3-hihi.jpg";
-import foto3 from "../assets/fotos_carrocel/imagem-temporaria4-hihi.jpg";
-import foto4 from "../assets/fotos_carrocel/imagem-temporaria2-hihi.webp";
-import fotoFixa from "../assets/imagem-temporaria-hihi.jpg";
+import foto1 from "../assets/fotos_carrocel/carrocel1.png";
+import foto2 from "../assets/fotos_carrocel/carrocel2.png";
+import foto3 from "../assets/fotos_carrocel/carrocel3.png";
+import foto4 from "../assets/fotos_carrocel/carrocel4.png";
+import fotoFixa from "../assets/fotos_carrocel/foto-fixa.png";
 import "../styles/Inicio.css";
 
 function Inicio() {
@@ -15,12 +15,23 @@ function Inicio() {
           <h1 className="titulo-inicio">Sua Festa Mágica Começa aqui!</h1>
         </div>
         <p className="subtitulo-inicio">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. In sint iure
-          voluptatum doloremque,
+          Levamos diversão, criatividade e entretenimento inesquecível para o
+          evento do seu filho. Recreação completa com segurança e muita magia!
         </p>
         <div className="botao-inicio-container">
-          <button className="botao-inicio">Quero uma festa</button>
-          <button className="botao-inicio">Quero uma festa</button>
+          <a
+            href="https://api.whatsapp.com/message/Q6PAXQS4V6E4P1?autoload=1&app_absent=0&utm_source=ig"
+            target="_blank"
+            className="botao-inicio !no-underline flex items-center justify-center"
+          >
+            Quero uma festa
+          </a>
+          <a
+            href="#servicos"
+            className="botao-inicio botao-secundario !no-underline flex items-center justify-center"
+          >
+            Ver Serviços
+          </a>
         </div>
       </div>
 

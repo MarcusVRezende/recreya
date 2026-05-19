@@ -81,13 +81,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 70px;
+    width: 55px;
+    height: 65px;
 }
 
 .icone-sobre {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     color: white;
 }
 
@@ -108,7 +108,7 @@
 .titulo-bloco {
     font-family: "Inter", sans-serif;
     padding: 15px 5px;
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     font-weight: 600;
     color: #FF9141;
 
@@ -142,7 +142,7 @@
 .titulo-bloco-dois {
     font-family: "Inter", sans-serif;
     padding: 15px 5px;
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #fdfdfd;
 }
@@ -154,13 +154,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 70px;
+    width: 55px;
+    height: 65px;
 }
 
 .icone-sobre-dois {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     color: #FF9141;
 }
 

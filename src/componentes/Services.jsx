@@ -8,7 +8,6 @@ import {
   ChevronRight,
   Balloon,
   Puzzle,
-  ClipboardList,
 } from "lucide-react";
 
 const servicesData = [
@@ -18,7 +17,10 @@ const servicesData = [
     title: "RECREAÇÃO",
     icon: PartyPopper,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ratione quaerat repudiandae velit amet natus, facere soluta architecto quidem quia obcaecati laborum numquam dolorem! Saepe voluptates ipsum doloremque nemo quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui hic ex iste cumque rerum eligendi accusamus culpa earum? Placeat quibusdam natus non cum quod recusandae veniam dicta quidem maiores?",
+      "Nossa recreação transforma qualquer espaço em um universo de aventura e energia! Com brincadeiras cantadas, gincanas dinâmicas, jogos de cooperação, caça ao tesouro temática e atividades lúdicas adaptadas para cada faixa etária. Garantimos o entretenimento saudável da garotada do início ao fim da festa, mantendo todos engajados, seguros e criando memórias inesquecíveis fora das telas.",
+    image1: "src/assets/Fotos_servicos/recreacao/recreacao1.png",
+    image2: "src/assets/Fotos_servicos/recreacao/recreacao2.png",
+    image3: "src/assets/Fotos_servicos/recreacao/recreacao3.png",
   },
   {
     id: "oficinas",
@@ -26,23 +28,32 @@ const servicesData = [
     title: "OFICINAS",
     icon: Palette,
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ratione quaerat repudiandae velit amet natus, facere soluta architecto quidem quia obcaecati laborum numquam dolorem! Saepe voluptates ipsum doloremque nemo quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui hic ex iste cumque rerum eligendi accusamus culpa earum? Placeat quibusdam natus non cum quod recusandae veniam dicta quidem maiores? a criatividade da criançada! Oficinas de Slime, Pintura em Tela, Miçangas, Jardinagem e Culinária. As crianças se divertem criando e levam suas obras de arte para casa como lembrancinha da festa.",
+      "O espaço perfeito para despertar o lado artístico e a imaginação dos pequenos artistas! Promovemos oficinas completas e interativas de Slime personalizado e confecção de pulseiras de Miçangas. O melhor de tudo é que as crianças se divertem criando, desenvolvem a coordenação e ainda levam suas próprias obras de arte para casa como uma lembrancinha exclusiva da sua festa.",
+    image1: "src/assets/Fotos_servicos/oficinas/oficina1.png",
+    image2: "src/assets/Fotos_servicos/oficinas/oficina2.png",
+    image3: "src/assets/Fotos_servicos/oficinas/oficina3.png",
   },
   {
-    id: "personagens",
-    label: "PERSONAGENS",
-    title: "PERSONAGENS",
+    id: "pintura-de-rosto",
+    label: "PINTURA DE ROSTO",
+    title: "PINTURA DE ROSTO",
     icon: Baby,
     description:
-      "A magia acontece Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ratione quaerat repudiandae velit amet natus, facere soluta architecto quidem quia obcaecati laborum numquam dolorem! Saepe voluptates ipsum doloremque nemo quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui hic ex iste cumque rerum eligendi accusamus culpa earum? Placeat quibusdam natus non cum quod recusandae veniam dicta quidem maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ratione quaerat repudiandae velit amet natus, facere soluta architecto quidem quia obcaecati laborum numquam dolorem! Saepe voluptates ipsum doloremque nemo quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui hic ex iste cumque rerum eligendi accusamus culpa earum? Placeat quibusdam natus non cum quod recusandae veniam dicta quidem maiores? personagem favorito do seu filho aparece na festa! Temos princesas, heróis e mascotes que interagem, tiram fotos e participam do momento do parabéns.",
+      "Transformamos fantasias em realidade através de traços coloridos e cheios de brilho! Nossa maquiagem artística utiliza materiais profissionais totalmente hipoalergênicos e específicos para a pele sensível das crianças. Com designs incríveis de heróis, princesas, animais, flores e elementos abstratos cheios de glitter, os pequenos entram no personagem com segurança, levando mais cor, encanto e magia para as fotos do evento.",
+    image1: "src/assets/Fotos_servicos/pintura_de_rosto/pintura1.png",
+    image2: "src/assets/Fotos_servicos/pintura_de_rosto/pintura2.png",
+    image3: "src/assets/Fotos_servicos/pintura_de_rosto/pintura3.png",
   },
   {
-    id: "brinquedos",
-    label: "BRINQUEDOS",
-    title: "BRINQUEDOS",
+    id: "balao-mania",
+    label: "BALÃO MANIA",
+    title: "BALÃO MANIA",
     icon: Rocket,
     description:
-      "Complete a festa com noLorem ipsum dolor sit amet consectetur adipisicing elit. Ab ratione quaerat repudiandae velit amet natus, facere soluta architecto quidem quia obcaecati laborum numquam dolorem! Saepe voluptates ipsum doloremque nemo quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui hic ex iste cumque rerum eligendi accusamus culpa earum? Placeat quibusdam natus non cum quod recusandae veniam dicta quidem maiores?ssa locação de brinquedos: Cama Elástica, Piscina de Bolinhas, Tobogã Inflável e Área Baby. Diversão garantida do início ao fim do evento.",
+      "Arte e modelagem em balões que encantam e fascinam os convidados de todas as idades! Nossos recreadores criam esculturas dinâmicas em tempo real, desde espadas, cachorrinhos, coroas e corações até flores coloridas. É uma atração super interativa onde cada balão ganha vida nas mãos da nossa equipe e vira um acessório divertido para as brincadeiras da festa, garantindo que ninguém saia de mãos vazias.",
+    image1: "src/assets/Fotos_servicos/balao_mania/balao1.png",
+    image2: "src/assets/Fotos_servicos/balao_mania/balao2.png",
+    image3: "src/assets/Fotos_servicos/balao_mania/balao3.png",
   },
 ];
 
@@ -82,7 +93,6 @@ const Services = () => {
             NOSSOS SERVIÇOS
           </h2>
 
-
           <div className="absolute top-5 -right-4 md:right-10 animate-bounce ">
             <Balloon className="text-red-400 fill-red-100 rotate-12 opacity-80 w-12 h-12 md:w-20 md:h-20" />
           </div>
@@ -91,19 +101,9 @@ const Services = () => {
             <Balloon className="text-blue-400 fill-blue-100 rotate-12 opacity-80 w-12 h-12 md:w-20 md:h-20" />
           </div>
         </div>
+
         <div className="init-hidden">
-          <div
-            className="
-    grid grid-cols-2 md:grid-cols-4        
-    !md:flex md:flex-wrap      
-    justify-center 
-    gap-2 md:gap-10 
-    mb-[-15px] 
-    relative z-20 
-    px-2 md:px-0 
-    max-w-md mx-auto             /* Limita a largura no mobile para os botões não esticarem muito */
-    md:max-w-none                /* Libera a largura no desktop */
-">
+          <div className="grid grid-cols-2 md:grid-cols-4 justify-center gap-2 md:gap-10 mb-[-15px] relative z-20 px-2 md:px-0 max-w-md mx-auto md:max-w-none">
             {servicesData.map((service) => {
               const Icon = service.icon;
               return (
@@ -111,17 +111,17 @@ const Services = () => {
                   key={service.id}
                   onClick={() => setActiveTab(service.id)}
                   className={`
-    !rounded-full !py-2 !px-3 !md:px-8 !md:py-3 
-    !flex items-center !justify-center !gap-2
-    !border-2 !border-white !shadow-lg
-    font-luckiest text-sm !md:text-xl !tracking-wider !transition-all duration-300
-    !w-full md:w-auto
-    group hover:-translate-y-1 hover:scale-100 active:scale-95
-    ${activeTab === service.id
+                    !rounded-full !py-2 !px-3 !md:px-8 !md:py-3 
+                    !flex items-center !justify-center !gap-2
+                    !border-2 !border-white !shadow-lg
+                    font-luckiest text-sm !md:text-xl !tracking-wider !transition-all duration-300
+                    !w-full md:w-auto
+                    group hover:-translate-y-1 hover:scale-100 active:scale-95
+                    ${activeTab === service.id
                       ? "bg-[#FF9141] text-white transform scale-105 z-30"
                       : "bg-[#38BDF8] text-white hover:bg-[#30aadd]"
                     }
-  `}
+                  `}
                 >
                   <Icon
                     size={18}
@@ -134,6 +134,7 @@ const Services = () => {
             })}
           </div>
         </div>
+
         <div className="init-hidden">
           <div
             className="bg-white rounded-[40px] !p-6 md:p-10 shadow-2xl relative z-10 flex flex-col lg:flex-row gap-10 items-center border-8 border-gray-50"
@@ -144,21 +145,13 @@ const Services = () => {
                 {activeContent.title}
               </h3>
 
-              <div className="text-sm md:text-lg font-sans  text-gray-600 font-bold text-lg leading-relaxed mb-5 text-justify">
+              <div className="text-sm md:text-lg font-sans text-gray-600 font-bold leading-relaxed mb-5 text-justify">
                 <p className="first-letter:text-3xl first-letter:text-[#FF9141]">
                   {activeContent.description}
                 </p>
               </div>
 
-              <button className="
-  bg-[#38BDF8] hover:bg-[#FF9141] 
-  text-white font-luckiest text-2xl py-4 px-10 
-  !rounded-full shadow-[0_6px_0_#0ea5e9] hover:shadow-[0_6px_0_#e67e22] 
-  active:shadow-none active:translate-y-1 
-  transition-all flex items-center gap-1 mx-auto lg:mx-0 group
-  /* NOVAS CLASSES ABAIXO */
-  hover:scale-105 hover:brightness-110
-">
+              <button className="bg-[#38BDF8] hover:bg-[#FF9141] text-white font-luckiest text-2xl py-4 px-10 !rounded-full shadow-[0_6px_0_#0ea5e9] hover:shadow-[0_6px_0_#e67e22] active:shadow-none active:translate-y-1 transition-all flex items-center gap-1 mx-auto lg:mx-0 group hover:scale-105 hover:brightness-110">
                 EU QUERO SABER MAIS
                 <ChevronRight
                   size={30}
@@ -175,25 +168,25 @@ const Services = () => {
 
               <div className="col-span-2 row-span-1 rounded-3xl overflow-hidden border-8 border-white shadow-lg">
                 <img
-                  src="src/assets/Fotos_servicos/imagem-temporaria-1.jpg"
-                  alt="Serviço"
+                  src={activeContent.image1}
+                  alt={`Serviço ${activeContent.title} 1`}
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
 
               <div className="col-span-2 md:col-span-1 row-span-1 rounded-3xl overflow-hidden border-8 border-white shadow-lg">
                 <img
-                  src="src/assets/Fotos_servicos/imagem-temporaria-2.jpg"
-                  alt="Detalhe"
-                  className="w-full h-full object-cover"
+                  src={activeContent.image2}
+                  alt={`Serviço ${activeContent.title} 2`}
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
 
               <div className="col-span-2 md:col-span-1 row-span-1 rounded-3xl overflow-hidden border-8 border-white shadow-lg">
                 <img
-                  src="src/assets/Fotos_servicos/imagem-temporaria-3.jpg"
-                  alt="Momento"
-                  className="w-full h-full object-cover"
+                  src={activeContent.image3}
+                  alt={`Serviço ${activeContent.title} 3`}
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
                 />
               </div>
             </div>
