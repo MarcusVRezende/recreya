@@ -4,15 +4,15 @@ import "./App.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import MyNavbar from "./components/Navbar";
+import MyNavbar from "./componentes/Navbar";
 import Footer from "./componentes/Footer";
 import Sobre from "./componentes/Sobre";
 import Inicio from "./componentes/Inicio";
-import Services from "./components/Services";
-import Comentarios from "./components/comentarios";
-import Letreiro from "./components/Letreiro";
+import Services from "./componentes/Services";
+import Comentarios from "./componentes/comentarios";
+import Letreiro from "./componentes/Letreiro";
 import Portfolio from "./componentes/Portfolio";
-import Fale_Conosco from "./components/Fale_conosco";
+import Fale_Conosco from "./componentes/Fale_conosco";
 
 function App() {
   useEffect(() => {
@@ -43,12 +43,9 @@ function App() {
         </div>
         <main>
           <Inicio />
-
           <Portfolio />
-
           <Sobre />
           <Services />
-
           <Comentarios />
           <Fale_Conosco />
           <Letreiro />

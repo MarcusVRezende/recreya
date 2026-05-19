@@ -42,12 +42,14 @@ const Footer = () => {
             </p>
             <div className="contatos-icones">
               <div className="instagram">
-                <a href="https://www.instagram.com/recreya/">
+                <a href="https://www.instagram.com/recreya/"
+                target="_blank">
                   <FaInstagram className="social" />
                 </a>
               </div>
               <div className="whatsapp">
-                <a href="https://www.instagram.com/recreya/">
+                <a href="https://api.whatsapp.com/message/Q6PAXQS4V6E4P1?autoload=1&app_absent=0&utm_source=ig"
+                target="_blank">
                   <FaWhatsapp className="social" />
                 </a>
               </div>

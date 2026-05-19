@@ -1,6 +1,8 @@
+import React from "react";
 import "../styles/sobre.css";
-import fotoSobre from "../assets/imagem-temporaria-hihi.jpg";
-import { FaRegHeart } from "react-icons/fa";
+import fotoSobre from "../assets/foto_equipe.png";
+// Importados os novos ícones lúdicos e profissionais para a Recreya
+import { ShieldCheck, Sparkles, Smile } from "lucide-react";
 
 function Sobre() {
   return (
@@ -30,14 +32,10 @@ function Sobre() {
             <div className="init-hidden">
               <div className="texto-foto-container">
                 <p className="texto-foto">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-                  ratione quaerat repudiandae velit amet natus, facere soluta
-                  architecto quidem quia obcaecati laborum numquam dolorem!
-                  Saepe voluptates ipsum doloremque nemo quibusdam? Lorem ipsum
-                  dolor sit amet consectetur adipisicing elit. Illo qui hic ex
-                  iste cumque rerum eligendi accusamus culpa earum? Placeat
-                  quibusdam natus non cum quod recusandae veniam dicta quidem
-                  maiores?
+                  A Recreya nasceu com o propósito de transformar festas infantis em verdadeiros 
+                  mundos de imaginação e alegria. Unimos profissionais apaixonados por brincar 
+                  e criar experiências únicas para que cada comemoração seja inesquecível, dinâmica 
+                  e cheia de sorrisos contagiantes de Brasília a Goiânia!
                 </p>
               </div>
             </div>
@@ -47,58 +45,55 @@ function Sobre() {
               <div className="bloco-sobre-um">
                 <div className="figura-titulo-bloco">
                   <div className="logo-bloco-sobre">
-                    <FaRegHeart className="icone-sobre" />
+                    {/* Substituído o coração pelo ícone de escudo/segurança */}
+                    <ShieldCheck className="icone-sobre"/>
                   </div>
                   <div className="titulo-bloco-container">
-                    <h2 className="titulo-bloco">titulooo</h2>
+                    <h2 className="titulo-bloco">SEGURANÇA TOTAL</h2>
                   </div>
                 </div>
                 <div className="texto-bloco-container">
                   <p className="texto-bloco">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsam distinctio neque natus corporis libero aspernatur
-                    blanditiis quis quae commodi eos magnam repellendus nulla
-                    nobis, aliquam ut aliquid fugiat, dolore deleniti.
+                    Monitores treinados e qualificados para cuidar e entreter os pequenos com total 
+                    atenção, garantindo a tranquilidade que os pais merecem durante todo o evento.
                   </p>
                 </div>
               </div>
             </div>
+            
             <div className="init-hidden">
               <div className="bloco-sobre-dois">
                 <div className="figura-titulo-bloco">
                   <div className="logo-bloco-sobre-dois">
-                    <FaRegHeart className="icone-sobre-dois" />
+                    <Sparkles className="icone-sobre-dois"/>
                   </div>
                   <div className="titulo-bloco-container">
-                    <h2 className="titulo-bloco-dois">titulooo</h2>
+                    <h2 className="titulo-bloco-dois">MUITA MAGIA</h2>
                   </div>
                 </div>
                 <div className="texto-bloco-container">
                   <p className="texto-bloco-dois">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsam distinctio neque natus corporis libero aspernatur
-                    blanditiis quis quae commodi eos magnam repellendus nulla
-                    nobis, aliquam ut aliquid fugiat, dolore deleniti.
+                    Brincadeiras dinâmicas, oficinas criativas e atividades pensadas para prender a 
+                    atenção das crianças de forma mágica, saudável e longe das telas.
                   </p>
                 </div>
               </div>
             </div>
+
             <div className="init-hidden">
               <div className="bloco-sobre-um">
                 <div className="figura-titulo-bloco">
                   <div className="logo-bloco-sobre">
-                    <FaRegHeart className="icone-sobre" />
+                    <Smile className="icone-sobre" />
                   </div>
                   <div className="titulo-bloco-container">
-                    <h2 className="titulo-bloco">titulooo</h2>
+                    <h2 className="titulo-bloco">DIVERSÃO COMPLETA</h2>
                   </div>
                 </div>
                 <div className="texto-bloco-container">
                   <p className="texto-bloco">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Ipsam distinctio neque natus corporis libero aspernatur
-                    blanditiis quis quae commodi eos magnam repellendus nulla
-                    nobis, aliquam ut aliquid fugiat, dolore deleniti.
+                    Do primeiro convidado até o parabéns, nossa energia não para! Atendemos todas as 
+                    idades com jogos adaptados e materiais de altíssima qualidade.
                   </p>
                 </div>
               </div>
@@ -109,4 +104,5 @@ function Sobre() {
     </div>
   );
 }
+
 export default Sobre;

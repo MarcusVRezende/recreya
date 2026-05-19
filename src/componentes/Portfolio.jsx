@@ -1,9 +1,9 @@
 import React from "react";
 import { PartyPopper, Smile, Star } from "lucide-react";
-import foto1 from "../assets/fotos_carrocel/imagem-temporaria4-hihi.jpg";
-import foto2 from "../assets/fotos_carrocel/imagem-temporaria4-hihi.jpg";
-import foto3 from "../assets/fotos_carrocel/imagem-temporaria2-hihi.webp";
-import foto4 from "../assets/fotos_carrocel/imagem-temporaria2-hihi.webp";
+import foto1 from "../assets/fotos_quadro/foto_quadro1.png";
+import foto2 from "../assets/fotos_quadro/foto_quadro2.png";
+import foto3 from "../assets/fotos_quadro/foto_quadro3.png";
+import foto4 from "../assets/fotos_quadro/foto_quadro4.png";
 import fotoIcone from "../assets/icone-chapeu.png";
 
 import { AiFillPushpin } from "react-icons/ai";
@@ -25,7 +25,7 @@ function Portfolio() {
             </div>
 
             <h2 className="titulo-portfolio">
-              Desde 20XX Atuando em festas para todas as famílias
+              Desde 2021 Atuando em festas para todas as famílias
             </h2>
             <p className="texto-portfolio">De Brasília a Goiânia </p>
           </div>

@@ -18,37 +18,39 @@ const PrevArrow = ({ onClick }) => (
     <ChevronLeft size={30} />
   </button>
 );
+
 const Comentarios = () => {
   const testimonialsData = [
     {
       id: 1,
-      name: "Teste 1",
+      name: "Mariana Silva",
       rating: 5,
-      text: "O atendimento foi excepcional, super recomendo a todos!",
-      photo: "https://i.pravatar.cc/150?img=7",
+      text: "Contratei a Recreya para o aniversário de 6 anos do meu filho e foi a melhor escolha! Os monitores têm uma energia incrível, prenderam a atenção de todas as crianças do início ao fim com brincadeiras lúdicas incríveis. Consegui curtir a festa inteira tranquila!",
+      photo: "https://i.pravatar.cc/150?img=47",
     },
     {
       id: 2,
-      name: "Teste 2",
+      name: "Rodrigo Soares",
       rating: 5,
-      text: "blablablablablablablablablablablablablablabla",
-      photo: "https://i.pravatar.cc/150?img=8",
+      text: "A oficina de slime e a pintura de rosto foram os grandes destaques da festa da minha filha! A equipe é super pontual, extremamente carinhosa com os pequenos e usam materiais de excelente qualidade. Recomendo de olhos fechados!",
+      photo: "https://i.pravatar.cc/150?img=11",
     },
     {
       id: 3,
-      name: "Teste 3",
-      rating: 4,
-      text: "blablablablablablablablabla lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, blablablablablablablablabla",
-      photo: "https://i.pravatar.cc/150?img=10",
+      name: "Juliana Mendes",
+      rating: 5,
+      text: "Sensacional! As esculturas de balão mania encantaram não só os pequenos, mas os adultos também. O atendimento desde o primeiro contato no WhatsApp até o dia do evento foi impecável. Com certeza faremos mais festas juntos!",
+      photo: "https://i.pravatar.cc/150?img=32",
     },
     {
       id: 4,
-      name: "Teste 4",
+      name: "Camila Rocha",
       rating: 5,
-      text: "Qualidade nota 10, voltarei com certeza!",
-      photo: "https://i.pravatar.cc/150?img=12",
+      text: "Equipe maravilhosa e super preparada! Conseguiram integrar crianças de várias idades na mesma gincana de um jeito super divertido e seguro. Valeu cada centavo investido, a animação deles é contagiante!",
+      photo: "https://i.pravatar.cc/150?img=5",
     },
   ];
+
   const [slides, setSlides] = useState(1);
 
   useEffect(() => {
@@ -78,10 +80,10 @@ const Comentarios = () => {
     arrows: slides > 1,
     autoplay: true,
     autoplaySpeed: 4000,
-
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
   };
+
   return (
     <section className="comentarios-section">
       <div className="comentarios-container">
@@ -114,9 +116,15 @@ const Comentarios = () => {
         </Slider>
 
         <div className="cta-container">
-          <button className="whatsapp-button transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:brightness-110 active:scale-95">
-            <span>Entrar em contato</span>
-            <FaWhatsapp size={32} />
+          <button className=" !no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:brightness-110 active:scale-95">
+            <a
+              href="https://api.whatsapp.com/message/Q6PAXQS4V6E4P1?autoload=1&app_absent=0&utm_source=ig"
+              target="_blank"
+              className="whatsapp-button !no-underline flex items-center justify-center"
+            >
+              Entrar em contato
+              <FaWhatsapp size={32} />
+            </a>
           </button>
         </div>
       </div>

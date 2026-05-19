@@ -47,7 +47,7 @@ const MyNavbar = () => {
 
 
                     <div>
-                        <a href="#fale-conosco" className="btn-fale-conosco">
+                        <a href="https://api.whatsapp.com/message/Q6PAXQS4V6E4P1?autoload=1&app_absent=0&utm_source=ig" target="_blank" className="btn-fale-conosco">
                             <Phone size={18} strokeWidth={2.5} />
                             Fale Conosco
                         </a>
